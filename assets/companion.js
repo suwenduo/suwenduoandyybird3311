@@ -70,3 +70,26 @@ pigHistory.push({text:finalPigLetter,outgoing:true,stamp:'11月8日 00:04'});
 for(const text of ['十四岁和十五岁没有什么不一样','习惯有陈浚铭在的日子了','所以现在很不习惯，因为没有你','我也想，回到海南','你一直 很傻'])pigHistory.push({text,outgoing:false});
 for(const text of ['陈思罕才傻','你看到了记得删掉这些','谢谢你回答我','但是我不想让他看见'])pigHistory.push({text,outgoing:true});
 pigHistory.push({text:'为什么？',outgoing:false},{text:'怕他觉得我傻',outgoing:true},{text:'[语音]',outgoing:false,voice:'assets/owner-final-voice.wav'});
+
+// Each account retains its own original playlist.
+const junmingLikedTracks=xixiLikedTracks.map(t=>[...t]);
+const sihanLikedTracks=shChenPlaylist.map(t=>[...t]);
+shChenPlaylist.splice(0,shChenPlaylist.length,...junmingLikedTracks);
+xixiLikedTracks.splice(0,xixiLikedTracks.length,...sihanLikedTracks);
+const companionMusic=openNetease;
+openNetease=function(page=nmCurrent){
+ const ownLiked=page==='junming-liked';
+ if(ownLiked)xixiLikedTracks.splice(0,xixiLikedTracks.length,...junmingLikedTracks);
+ try{companionMusic(ownLiked?'xixi-liked':page);}finally{if(ownLiked)xixiLikedTracks.splice(0,xixiLikedTracks.length,...sihanLikedTracks);}
+ if(ownLiked||page==='xixi-liked'){
+  const count=ownLiked?junmingLikedTracks.length:sihanLikedTracks.length;
+  const owner=$('content').querySelector('.xixi-liked-owner p');if(owner)owner.textContent=(ownLiked?'等待复活码':'您的复活码是3512')+' · '+count+'首';
+  const title=$('content').querySelector('.xixi-liked-owner h1');if(title)title.textContent='我喜欢的音乐';
+  if(ownLiked){nmCurrent='junming-liked';$('xixiLikedBack').setAttribute('aria-label','返回我的主页');$('xixiLikedBack').onclick=()=>openNetease('me');}
+ }
+ if(page==='me'){
+  const area=$('content').querySelector('.nm-own-empty-area');
+  if(area){area.innerHTML='<button class="xixi-liked-entry" id="junmingOpenLiked"><span class="xixi-like-art">♡</span><span><strong>我喜欢的音乐</strong><small>'+junmingLikedTracks.length+'首</small></span><span>›</span></button>';$('junmingOpenLiked').onclick=()=>openNetease('junming-liked');}
+ }
+ if(page==='xixi-profile'){const count=$('content').querySelector('.xixi-liked-entry small');if(count)count.textContent=sihanLikedTracks.length+'首';}
+};
