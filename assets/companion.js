@@ -1,6 +1,7 @@
 // Companion phone: an observer reads the original conversation from Junming's side.
 const companionPeer=wcContacts.find(c=>c.name==='🐷');
 companionPeer.name='陈思罕';
+wcSister.avatar=wcCrewAvatar('哥','#617586');
 companionPeer.avatar='assets/2a4f7eace0f0ba755a666dd6da0819e97e3ea6f4.jpg';
 for(const message of pigHistory)if(!message.notice)message.outgoing=!message.outgoing;
 pigMessageDelivered=false;pigMessageRead=true;pigConversation.length=0;
@@ -57,3 +58,6 @@ openXixiChat=function(){
 };
 $('cancel').onclick=()=>{pin='';dots();show('lock');};
 show('pass');
+
+unlockToHome=async function(){show('home');motionBusy=false;busy=false;};
+deliverOwnerSMS=()=>{};

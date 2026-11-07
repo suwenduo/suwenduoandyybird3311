@@ -2232,7 +2232,7 @@ let ownerSMSCount=0,ownerSMSBusy=false,ownerSMSDraft='',ownerSMSTyping=false;
 let ownerFreeWriting=false,ownerWishDraft='';
 const ownerBirthdayReplies=[];
 const ownerFreeTranscript=[];
-const ownerSMSThread={number:ownerSMSNumber,time:'23:57',text:ownerSMSMessages[0].text,read:false};
+const ownerSMSThread={number:ownerSMSNumber,time:'23:57',text:ownerSMSMessages[0]?.text||'',read:false};
 function isOwnerSMSOpen(){
  return !smsScreen.classList.contains('hidden') && !!$('ownerSMSInput');
 }
