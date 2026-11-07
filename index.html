@@ -84,20 +84,10 @@
 .nm-dm-scroll>:is(.nm-dm-incoming,.nm-dm-outgoing)+:is(.nm-dm-incoming,.nm-dm-outgoing){margin-top:40px}
 .nm-dm-scroll>.nm-dm-time{margin:32px 0 24px}
 .nm-dm-scroll{padding-bottom:36px}
-</style></head><body><div class="intro" id="intro" role="status"><p class="intro-text">欸，我捡到了一部手机。</p></div><main class="phone" aria-label="手机模拟器"><div class="wall"></div><div class="status"><span id="statusTime">23:48</span><span class="status-right"><span>▮▮▮</span><span>5G</span><span class="battery">100</span></span></div><div class="island"><i class="camera"></i></div><section class="screen lock" id="lock"><div class="lock-symbol"></div><div class="date">11月7日 星期六</div><div class="time">23:48</div><div class="lock-bottom">向上滑动或轻点，输入密码</div><button class="unlock" aria-label="解锁手机"></button></section><section class="screen pass hidden" id="pass"><div class="lock-symbol"></div><h1>输入密码</h1><p class="sub" id="message" aria-live="polite">输入四位数字密码</p><div class="dots" aria-label="已输入0位密码" id="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="keys" id="keys"></div><div class="actions"><button id="cancel">紧急联系人</button><button id="delete">删除</button></div></section><section class="screen home hidden" id="home"><div class="widgets"><div class="widget weather"><div class="city">重庆</div><div class="temp">21°</div><p>☀ 晴</p><p>最高 23°　最低 17°</p></div><div class="widget calendar"><div class="day">星期六</div><div class="num">7</div><p>十一月 · 美好的一天</p></div></div><div class="apps" id="apps"></div><div class="pages"><b>●</b>●</div><div class="dock" id="dock"></div></section><section class="screen panel hidden" id="panel"><header><button id="back">‹ 返回</button><h2 id="appTitle"></h2></header><div id="content"></div></section><section class="screen emergency hidden" id="emergency"><nav class="emergency-nav"><button id="emergencyBack">‹ 返回</button><span>锁定时可访问</span></nav><h1 class="emergency-title">紧急联系人</h1><p class="emergency-sub">即使手机已锁定，也可以联系以下联系人。</p><p class="section-label">紧急联系人 · 1</p><article class="contact-card"><div class="pig-avatar" aria-hidden="true">🐷</div><h2>🐷</h2><p class="contact-kind">紧急联系人</p><button class="contact-call" id="contactCall" aria-label="呼叫紧急联系人🐷"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.7 15.7 0 006.6 6.6l2.2-2.2a1 1 0 011-.24c1.1.37 2.3.56 3.6.56a1 1 0 011 1V20a1 1 0 01-1 1C10.6 21 3 13.4 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.4.56 3.6a1 1 0 01-.25 1z"/></svg>呼叫</button></article><div class="emergency-footer"><i>✳</i>紧急联系人可在未解锁时拨打</div></section><section class="screen call-screen hidden" id="calling"><div class="pig-avatar" aria-hidden="true">🐷</div><h2>🐷</h2><p id="callStatus" role="status" aria-live="polite">正在呼叫…</p><p style="font-size:11px;opacity:.6">模拟通话</p><p id="callSubtitle" class="call-subtitle" role="status" aria-live="polite"></p><button class="voice-replay hidden" id="voiceReplay">播放语音</button><button class="hangup" id="hangup" aria-label="挂断">☎</button><div class="hangup-label">挂断</div></section><section class="screen wechat hidden" id="wechat"></section><div class="homebar"></div></main><script>
+</style></head><body><main class="phone" aria-label="手机模拟器"><div class="wall"></div><div class="status"><span id="statusTime">23:48</span><span class="status-right"><span>▮▮▮</span><span>5G</span><span class="battery">100</span></span></div><div class="island"><i class="camera"></i></div><section class="screen lock" id="lock"><div class="lock-symbol"></div><div class="date">11月7日 星期六</div><div class="time">23:48</div><div class="lock-bottom">向上滑动或轻点，输入密码</div><button class="unlock" aria-label="解锁手机"></button></section><section class="screen pass hidden" id="pass"><div class="lock-symbol"></div><h1>输入密码</h1><p class="sub" id="message" aria-live="polite">输入四位数字密码</p><div class="dots" aria-label="已输入0位密码" id="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="keys" id="keys"></div><div class="actions"><button id="cancel">取消</button><button id="delete">删除</button></div></section><section class="screen home hidden" id="home"><div class="widgets"><div class="widget weather"><div class="city">重庆</div><div class="temp">21°</div><p>☀ 晴</p><p>最高 23°　最低 17°</p></div><div class="widget calendar"><div class="day">星期六</div><div class="num">7</div><p>十一月 · 美好的一天</p></div></div><div class="apps" id="apps"></div><div class="pages"><b>●</b>●</div><div class="dock" id="dock"></div></section><section class="screen panel hidden" id="panel"><header><button id="back">‹ 返回</button><h2 id="appTitle"></h2></header><div id="content"></div></section><section class="screen emergency hidden" id="emergency"><nav class="emergency-nav"><button id="emergencyBack">‹ 返回</button><span>锁定时可访问</span></nav><h1 class="emergency-title">紧急联系人</h1><p class="emergency-sub">即使手机已锁定，也可以联系以下联系人。</p><p class="section-label">紧急联系人 · 1</p><article class="contact-card"><div class="pig-avatar" aria-hidden="true">🐷</div><h2>🐷</h2><p class="contact-kind">紧急联系人</p><button class="contact-call" id="contactCall" aria-label="呼叫紧急联系人🐷"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.7 15.7 0 006.6 6.6l2.2-2.2a1 1 0 011-.24c1.1.37 2.3.56 3.6.56a1 1 0 011 1V20a1 1 0 01-1 1C10.6 21 3 13.4 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.4.56 3.6a1 1 0 01-.25 1z"/></svg>呼叫</button></article><div class="emergency-footer"><i>✳</i>紧急联系人可在未解锁时拨打</div></section><section class="screen call-screen hidden" id="calling"><div class="pig-avatar" aria-hidden="true">🐷</div><h2>🐷</h2><p id="callStatus" role="status" aria-live="polite">正在呼叫…</p><p style="font-size:11px;opacity:.6">模拟通话</p><p id="callSubtitle" class="call-subtitle" role="status" aria-live="polite"></p><button class="voice-replay hidden" id="voiceReplay">播放语音</button><button class="hangup" id="hangup" aria-label="挂断">☎</button><div class="hangup-label">挂断</div></section><section class="screen wechat hidden" id="wechat"></section><div class="homebar"></div></main><script>
 const junmingStorage={getItem:k=>localStorage.getItem("cjm-"+k),setItem:(k,v)=>localStorage.setItem("cjm-"+k,v),removeItem:k=>localStorage.removeItem("cjm-"+k)};
 
-const introOverlay=document.getElementById('intro');
 const phoneRoot=document.querySelector('.phone');
-phoneRoot.inert=true;
-setTimeout(()=>{introOverlay.classList.add('leaving');phoneRoot.inert=false;setTimeout(()=>introOverlay.remove(),850)},4800);
-
-function playWrongIntro(){
- const overlay=document.createElement('div');overlay.className='intro';overlay.setAttribute('role','status');
- const line=document.createElement('p');line.className='intro-text';line.textContent='密码是什么……';overlay.append(line);document.body.append(overlay);phoneRoot.inert=true;
- setTimeout(()=>{const next=document.createElement('p');next.className='intro-text';next.textContent='要不然打给紧急联系人？';line.replaceWith(next)},4700);
- setTimeout(()=>{overlay.classList.add('leaving');setTimeout(()=>{overlay.remove();phoneRoot.inert=false;busy=false},850)},9500);
-}
 const $=id=>document.getElementById(id);let pin='',busy=false,wrongIntroPlayed=false;const screens=['lock','pass','home','panel','emergency','calling','wechat'];function show(name){if(document.activeElement instanceof HTMLElement)document.activeElement.blur();document.querySelector(".phone").scrollTop=0;screens.forEach(id=>$(id).classList.toggle('hidden',id!==name));}function dots(){[...$('dots').children].forEach((d,i)=>d.classList.toggle('fill',i<pin.length));$('dots').setAttribute('aria-label','已输入'+pin.length+'位密码')}function enter(n){
  if(busy||motionBusy||$('pass').classList.contains('hidden'))return;
  pin+=n;dots();
@@ -107,9 +97,9 @@ const $=id=>document.getElementById(id);let pin='',busy=false,wrongIntroPlayed=f
   if(pin==='3311'){unlockToHome();$('message').textContent='输入四位数字密码';pin='';dots();return;}
   $('message').textContent='密码不正确，请重试';
   $('dots').classList.add('shake');
-  const firstWrong=!wrongIntroPlayed;wrongIntroPlayed=true;
-  setTimeout(()=>{$('dots').classList.remove('shake');pin='';dots();if(!firstWrong)busy=false;},420);
-  if(firstWrong)setTimeout(playWrongIntro,1250);
+  
+  setTimeout(()=>{$('dots').classList.remove('shake');pin='';dots();busy=false;},420);
+
  },220);
 }
 const letters=['','', 'ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ'];for(const n of [1,2,3,4,5,6,7,8,9,0]){const b=document.createElement('button');b.className='key'+(n===0?' zero':'');b.innerHTML=n+'<small>'+letters[n]+'</small>';b.setAttribute('aria-label',String(n));b.onclick=()=>enter(String(n));$('keys').append(b)}let gesture=null,motionBusy=false,suppressLockClick=false;
@@ -173,7 +163,7 @@ async function unlockToHome(){
  await animation.finished.catch(()=>{});passScreen.classList.add('hidden');animation.cancel();resetMotion();
  setTimeout(()=>$('home').classList.remove('entering'),250);motionBusy=false;busy=false;deliverPigMessage();
 }
-$('delete').onclick=()=>{if(!busy){pin=pin.slice(0,-1);dots()}};$('cancel').onclick=()=>{if(!busy){pin='';dots();show('emergency')}};$('emergencyBack').onclick=()=>show('pass');$('contactCall').onclick=startEmergencyCall;$('hangup').onclick=()=>{stopEmergencyCall();show('emergency')};document.addEventListener('keydown',e=>{if(!$('pass').classList.contains('hidden')){if(/^\d$/.test(e.key))enter(e.key);if(e.key==='Backspace'){$('delete').click();e.preventDefault()}if(e.key==='Escape')$('cancel').click()}});
+$('delete').onclick=()=>{if(!busy){pin=pin.slice(0,-1);dots()}};$('cancel').onclick=()=>{if(!busy){pin='';dots();show('lock')}};$('emergencyBack').onclick=()=>show('pass');$('contactCall').onclick=startEmergencyCall;$('hangup').onclick=()=>{stopEmergencyCall();show('emergency')};document.addEventListener('keydown',e=>{if(!$('pass').classList.contains('hidden')){if(/^\d$/.test(e.key))enter(e.key);if(e.key==='Backspace'){$('delete').click();e.preventDefault()}if(e.key==='Escape')$('cancel').click()}});
 const apps=[['信息','green','●'],['日历','white','<span style="font-size:11px;color:#e34a55;text-align:center">星期六<br><b style="font-size:33px;font-weight:400;color:#222">7</b></span>'],['照片','white','<i class="flower"></i>'],['相机','gray','📷'],['天气','blue','☀'],['时钟','black','<i class="clockface"></i>'],['备忘录','notes','≡'],['设置','gray','⚙']];const dock=[['电话','green','☎'],['Safari','white','🧭'],['微信','green','<span style="font-size:29px">●<span style="font-size:20px;margin-left:-9px">●</span></span>'],['音乐','white','<span style="color:#ef496b">♫</span>']];function openApp(name){if(name==='微信'){openWechat();return;}$('appTitle').textContent=name;$('content').innerHTML='';if(name==='备忘录'){const t=document.createElement('textarea');t.placeholder='写点什么…';t.setAttribute('aria-label','备忘录内容');try{t.value=junmingStorage.getItem('phone-note')||''}catch{}t.oninput=()=>{try{junmingStorage.setItem('phone-note',t.value)}catch{}};$('content').append(t)}else if(name==='设置'){$('content').innerHTML='<button class="panel-lock" id="relock">锁定手机</button>';$('relock').onclick=()=>show('lock')}else{$('content').innerHTML='<div class="empty"><div class="large">'+(name==='照片'?'▧':name==='日历'?'8':'◌')+'</div>'+(name==='日历'?'11月8日 · 暂无日程':name==='天气'?'重庆 · 晴 · 21°<br><small>模拟天气</small>':name==='时钟'?'11:08 · 模拟时间':'这里还没有内容')+'</div>'}show('panel')}for(const [target,list] of [['apps',apps],['dock',dock]])for(const [name,color,icon]of list){const b=document.createElement('button');b.className='app';b.setAttribute('aria-label',name);b.innerHTML='<span class="icon '+color+'">'+icon+'</span>'+(target==='apps'?'<span>'+name+'</span>':'');b.onclick=()=>openApp(name);$(target).append(b)}$('back').onclick=()=>show('home');
 
 const wcContacts=[{name:'妈咪',avatar:"assets/04984e6088de3c2a5b2537c11045f7a271d5cd48.jpg",pinned:true},{name:'🐷',avatar:"assets/60a258b0a6910b33f9b4d15b3204ec5e51c80159.png",pinned:true},{name:'龙哥',avatar:'assets/3371b786d3a86591de380d8059cd27291881cc6c.jpg'},{name:'Henry',avatar:'assets/a753cebd147b67c04c19691df8c7b2753285a161.jpg'},{name:'lulu杰',avatar:'assets/ae3779e80bc80bf1e9476d054bb7ea7290ba4aa8.jpg'},{name:'博文',avatar:'assets/d5fcd87b249a57139980ffdf982e319ad7596402.jpg'}];
@@ -461,7 +451,7 @@ const pigHistory = [
   ? {text: Array.isArray(entry) ? entry[0] : entry}
   : entry)
 })));
-wcContacts.find(c => c.name === '🐷').preview = pigHistory.at(-1).text;
+wcContacts.find(c => c.name === '🐷').preview = pigHistory.at(-1)?.text||'';
 let pigIsTyping=false,typingTimer=null,activeChat=null;
 const chatDelay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 function escapeChat(text){return text.replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
@@ -898,15 +888,15 @@ openNetease=function(page=nmCurrent){
 };
 
 
-const wcSelfPhoto='assets/2a4f7eace0f0ba755a666dd6da0819e97e3ea6f4.jpg';
-function wcSelfAvatar(){return '<img class="self-avatar wc-self-photo" src="'+wcSelfPhoto+'" alt="shChen的头像">';}
+const wcSelfPhoto='assets/60a258b0a6910b33f9b4d15b3204ec5e51c80159.png';
+function wcSelfAvatar(){return '<img class="self-avatar wc-self-photo" src="'+wcSelfPhoto+'" alt="陈浚铭的头像">';}
 const beforeProfileWechat=openWechat;
 openWechat=function(active=0){
  beforeProfileWechat(active);
  const root=$('wechat');root.classList.toggle('wc-profile-page',active===3);
  if(active===3){
   root.querySelector('.wc-header').remove();const body=root.querySelector('.wc-tabbody');
-  body.className='wc-profile-body';body.innerHTML='<div class="wc-profile-hero"><div class="wc-profile-card"><img class="wc-profile-photo" src="'+wcSelfPhoto+'" alt="shChen的头像"><div class="wc-profile-identity"><h1>shChen</h1><p>微信号：shChen1108</p></div><div class="wc-profile-tools"><span aria-label="二维码图标">'+wcSvg('<path d="M3 3h8v8H3zm14 0h8v8h-8zM3 17h8v8H3zm14 0h3v3h-3zm6 0h2v8h-2zm-6 6h3v2h-3z"/>')+'</span><span>›</span></div></div><div class="wc-profile-status"><span>元气满满 <i></i> ›</span><span class="wc-profile-more">•••</span></div></div>';
+  body.className='wc-profile-body';body.innerHTML='<div class="wc-profile-hero"><div class="wc-profile-card"><img class="wc-profile-photo" src="'+wcSelfPhoto+'" alt="陈浚铭的头像"><div class="wc-profile-identity"><h1>陈浚铭</h1><p>微信号：3311</p></div><div class="wc-profile-tools"><span aria-label="二维码图标">'+wcSvg('<path d="M3 3h8v8H3zm14 0h8v8h-8zM3 17h8v8H3zm14 0h3v3h-3zm6 0h2v8h-2zm-6 6h3v2h-3z"/>')+'</span><span>›</span></div></div><div class="wc-profile-status"><span>元气满满 <i></i> ›</span><span class="wc-profile-more">•••</span></div></div>';
  }
 };
 const beforeProfileChat=wcOpenChat;
@@ -978,17 +968,17 @@ const nmWithGooseAccessibility=openNetease;
 openNetease=function(page=nmCurrent){nmWithGooseAccessibility(page);document.querySelectorAll('.nm-personal-track').forEach(row=>{if(row.querySelector('.nm-queue-song')?.textContent==='goosebumps'){row.setAttribute('role','button');row.tabIndex=0;row.setAttribute('aria-label','打开goosebumps播放页');row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGoosePlayer();}};}});};
 
 
-const nmXixiAvatar="assets/f49300888a04b9a6ac1f22a2c829a910344f1e4a.png";
+const nmXixiAvatar='assets/2a4f7eace0f0ba755a666dd6da0819e97e3ea6f4.jpg';
 function openXixiChat(){
  $('nmQueueLayer')?.remove();nmCurrent='xixi';const panel=$('panel');panel.classList.add('nm-shell','nm-dark');panel.classList.remove('nm-ranking');
- $('content').innerHTML='<div class="nm-dm-head"><button class="nm-button" id="nmDmBack" aria-label="返回我的消息">'+nmIcons.back+'</button><strong>等待复活码 <span>›</span></strong><span class="nm-dm-listen-pill">一起听</span><span class="nm-dm-dots">⋮</span></div><div class="nm-dm-scroll"><div class="nm-dm-profile"><img src="'+nmXixiAvatar+'" alt="等待复活码的头像"><h1>等待复活码</h1><p>已互相关注331天</p><span class="nm-dm-profile-link">查看主页</span></div><div class="nm-dm-time">12月11日 20:41</div><div class="nm-dm-incoming"><img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="等待复活码的头像"><div class="nm-dm-invite"><div class="nm-dm-invite-text">我的耳机分你一半，和我一起听歌吧~</div><div class="nm-dm-invite-inner"><img src="'+nmXixiAvatar+'" alt="等待复活码的头像"><span>加入一起听</span></div></div></div></div><div class="nm-dm-compose"><span>'+nmIcons.mic+'</span><div>发送消息</div><span class="nm-dm-smile">☻</span><span class="nm-dm-add">＋</span></div>';
+ $('content').innerHTML='<div class="nm-dm-head"><button class="nm-button" id="nmDmBack" aria-label="返回我的消息">'+nmIcons.back+'</button><strong>该用户已消失 <span>›</span></strong><span class="nm-dm-listen-pill">一起听</span><span class="nm-dm-dots">⋮</span></div><div class="nm-dm-scroll"><div class="nm-dm-profile"><img src="'+nmXixiAvatar+'" alt="该用户已消失的头像"><h1>该用户已消失</h1><p>已互相关注331天</p><span class="nm-dm-profile-link">查看主页</span></div><div class="nm-dm-time">12月11日 20:41</div><div class="nm-dm-incoming"><img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="该用户已消失的头像"><div class="nm-dm-invite"><div class="nm-dm-invite-text">我的耳机分你一半，和我一起听歌吧~</div><div class="nm-dm-invite-inner"><img src="'+nmXixiAvatar+'" alt="该用户已消失的头像"><span>加入一起听</span></div></div></div></div><div class="nm-dm-compose"><span>'+nmIcons.mic+'</span><div>发送消息</div><span class="nm-dm-smile">☻</span><span class="nm-dm-add">＋</span></div>';
  $('nmDmBack').onclick=()=>openNetease('messages');if(!reducedMotion())$('content').animate([{opacity:0,transform:'translateX(18px)'},{opacity:1,transform:'translateX(0)'}],{duration:250,easing:'ease-out'});
 }
 const nmBeforeXixi=openNetease;
 openNetease=function(page=nmCurrent){
  if(page==='xixi'){show('panel');openXixiChat();return;}
  nmBeforeXixi(page);if(page!=='messages')return;
- const list=$('content').querySelector('.nm-message-list');const row=document.createElement('button');row.className='nm-xixi-row';row.setAttribute('aria-label','与等待复活码的聊天');row.innerHTML='<img src="'+nmXixiAvatar+'" alt="等待复活码的头像"><span><strong>等待复活码</strong><small>邀请你一起听歌</small></span><time>2025/12/11</time>';row.onclick=()=>openNetease('xixi');list.append(row);
+ const list=$('content').querySelector('.nm-message-list');const row=document.createElement('button');row.className='nm-xixi-row';row.setAttribute('aria-label','与该用户已消失的聊天');row.innerHTML='<img src="'+nmXixiAvatar+'" alt="该用户已消失的头像"><span><strong>该用户已消失</strong><small>邀请你一起听歌</small></span><time>2025/12/11</time>';row.onclick=()=>openNetease('xixi');list.append(row);
 };
 
 
@@ -998,12 +988,12 @@ const xixiAlbumCovers={"心动":"assets/2111b9f70ab228c3f958676cca3380615c1a9d3d
 function xixiCover(title,cls=''){return xixiAlbumCovers[title]?'<img class="'+cls+'" src="'+xixiAlbumCovers[title]+'" alt="'+escapeChat(title)+'专辑封面">':'<span class="xixi-cover-placeholder '+cls+'" aria-label="封面待补充">♫</span>';}
 function renderXixiProfile(){
  nmCurrent='xixi-profile';$('panel').classList.add('nm-shell','nm-dark','xixi-profile-active');
- $('content').innerHTML='<div class="xixi-user-profile" style="background-image:linear-gradient(#0003,#151515ab),url('+xixiProfileBackground+')"><div class="xixi-user-toolbar"><button class="nm-button" id="xixiProfileBack" aria-label="返回聊天">'+nmIcons.back+'</button><span>⋮</span></div><div class="xixi-user-identity"><img src="'+nmXixiAvatar+'" alt="等待复活码的头像"><h1>等待复活码</h1><p>已互相关注331天</p><div class="xixi-user-actions"><span>✓ 互相关注</span><button id="xixiProfileChat">聊天</button></div></div><div class="xixi-profile-lower"><div class="xixi-user-tabs"><strong>音乐</strong><span>播客</span><span>笔记</span></div><div class="xixi-created">创建的歌单 (1)</div><button class="xixi-liked-entry" id="xixiOpenLiked"><span class="xixi-like-art">♡</span><span><strong>喜欢的音乐</strong><small>19首</small></span><span>›</span></button></div></div>';
+ $('content').innerHTML='<div class="xixi-user-profile" style="background-image:linear-gradient(#0003,#151515ab),url('+xixiProfileBackground+')"><div class="xixi-user-toolbar"><button class="nm-button" id="xixiProfileBack" aria-label="返回聊天">'+nmIcons.back+'</button><span>⋮</span></div><div class="xixi-user-identity"><img src="'+nmXixiAvatar+'" alt="该用户已消失的头像"><h1>该用户已消失</h1><p>已互相关注331天</p><div class="xixi-user-actions"><span>✓ 互相关注</span><button id="xixiProfileChat">聊天</button></div></div><div class="xixi-profile-lower"><div class="xixi-user-tabs"><strong>音乐</strong><span>播客</span><span>笔记</span></div><div class="xixi-created">创建的歌单 (1)</div><button class="xixi-liked-entry" id="xixiOpenLiked"><span class="xixi-like-art">♡</span><span><strong>喜欢的音乐</strong><small>19首</small></span><span>›</span></button></div></div>';
  $('xixiProfileBack').onclick=()=>openNetease('xixi');$('xixiProfileChat').onclick=()=>openNetease('xixi');$('xixiOpenLiked').onclick=()=>openNetease('xixi-liked');
 }
 function renderXixiLiked(){
  nmCurrent='xixi-liked';$('panel').classList.add('nm-dark');
- $('content').innerHTML='<div class="xixi-liked-page"><header class="xixi-liked-head"><button class="nm-button" id="xixiLikedBack" aria-label="返回等待复活码主页">'+nmIcons.back+'</button><strong>喜欢的音乐</strong><span>⋮</span></header><div class="xixi-liked-owner"><span class="xixi-like-art">♡</span><div><h1>喜欢的音乐</h1><p>等待复活码 · 19首</p></div></div><div class="xixi-liked-play"><span>▶</span> 播放全部 <small>（11）</small></div><div class="xixi-liked-list">'+xixiLikedTracks.map(([title,artist,album],i)=>'<div class="xixi-liked-track"><span class="xixi-track-index">'+(i+1)+'</span>'+xixiCover(title,'xixi-track-cover')+'<div class="xixi-track-text"><strong>'+escapeChat(title)+'</strong><small>'+escapeChat(artist||'歌手待确认')+(album?' · '+escapeChat(album):'')+'</small></div><span class="xixi-track-dots">⋮</span></div>').join('')+'</div></div>';
+ $('content').innerHTML='<div class="xixi-liked-page"><header class="xixi-liked-head"><button class="nm-button" id="xixiLikedBack" aria-label="返回该用户已消失主页">'+nmIcons.back+'</button><strong>喜欢的音乐</strong><span>⋮</span></header><div class="xixi-liked-owner"><span class="xixi-like-art">♡</span><div><h1>喜欢的音乐</h1><p>该用户已消失 · 19首</p></div></div><div class="xixi-liked-play"><span>▶</span> 播放全部 <small>（11）</small></div><div class="xixi-liked-list">'+xixiLikedTracks.map(([title,artist,album],i)=>'<div class="xixi-liked-track"><span class="xixi-track-index">'+(i+1)+'</span>'+xixiCover(title,'xixi-track-cover')+'<div class="xixi-track-text"><strong>'+escapeChat(title)+'</strong><small>'+escapeChat(artist||'歌手待确认')+(album?' · '+escapeChat(album):'')+'</small></div><span class="xixi-track-dots">⋮</span></div>').join('')+'</div></div>';
  $('xixiLikedBack').onclick=()=>openNetease('xixi-profile');
 }
 const nmBeforeXixiProfile=openNetease;
@@ -1019,8 +1009,8 @@ openNetease=function(page=nmCurrent){
 
 Object.assign(xixiAlbumCovers,{"SAD!": "assets/395fea3cca040c8cedfa9c4f9f39481b09c7963c.jpg"});
 
-const nmOwnNickname='该用户已消失';
-const nmDefaultAvatar='<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="32" fill="#d5d5d5"/><circle cx="32" cy="24" r="12" fill="#f6f6f6"/><path d="M10 61v-6a22 22 0 0 1 44 0v6" fill="#f6f6f6"/></svg>';
+const nmOwnNickname='等待复活码';
+const nmDefaultAvatar='<img src="assets/f49300888a04b9a6ac1f22a2c829a910344f1e4a.png" alt="陈浚铭的头像" style="width:100%;height:100%;object-fit:cover">';
 const xixiMoreInvitationDates=['3月12日 21:33','3月18日 21:57','3月25日 22:18','4月2日 21:54','4月9日 22:51'];
 const xixiChatBeforeMoreInvites=openXixiChat;
 openXixiChat=function(){
@@ -1312,14 +1302,14 @@ const nmBeforeJuneChat=openXixiChat;
 openXixiChat=function(){
  nmBeforeJuneChat();const scroll=$('content').querySelector('.nm-dm-scroll');
  const incoming=text=>'<div class="nm-dm-incoming"><img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="陈浚铭的头像"><div class="nm-dm-gray">'+text+'</div></div>';
- scroll.insertAdjacentHTML('beforeend','<div class="nm-dm-time nm-song-date">6月12日 22:28</div><div class="nm-dm-incoming"><img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="陈浚铭的头像"><div class="nm-shared-song"><p class="nm-shared-copy">最近这首歌好火，你有刷到吗？</p><button class="nm-shared-link" id="nmJuneGlass" aria-label="播放玻璃 Gareth.T"><span class="nm-shared-cover"><img style="width:100%;height:100%;left:0;top:0;object-fit:cover" src="'+nmExtraTracks.jm0.cover+'" alt="玻璃专辑封面"><span class="nm-shared-play">▶</span></span><span class="nm-shared-title"><em>单曲</em>玻璃</span><span class="nm-shared-artist">Gareth.T</span></button></div></div><div class="nm-dm-time nm-song-date">6月26日 18:19</div>'+incoming('你这个网易云账号不用了吗？')+incoming('怎么昵称改成该用户已消失了')+incoming('比格复活')+'<div class="nm-dm-time nm-song-date">6月29日 19:21</div>'+incoming('。')+incoming('😭'));
+ scroll.insertAdjacentHTML('beforeend','<div class="nm-dm-time nm-song-date">6月12日 22:28</div><div class="nm-dm-incoming"><img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="陈浚铭的头像"><div class="nm-shared-song"><p class="nm-shared-copy">最近这首歌好火，你有刷到吗？</p><button class="nm-shared-link" id="nmJuneGlass" aria-label="播放玻璃 Gareth.T"><span class="nm-shared-cover"><img style="width:100%;height:100%;left:0;top:0;object-fit:cover" src="'+nmExtraTracks.jm0.cover+'" alt="玻璃专辑封面"><span class="nm-shared-play">▶</span></span><span class="nm-shared-title"><em>单曲</em>玻璃</span><span class="nm-shared-artist">Gareth.T</span></button></div></div><div class="nm-dm-time nm-song-date">6月26日 18:19</div>'+incoming('你这个网易云账号不用了吗？')+incoming('怎么昵称改成等待复活码了')+incoming('比格复活')+'<div class="nm-dm-time nm-song-date">6月29日 19:21</div>'+incoming('。')+incoming('😭'));
  $('nmJuneGlass').onclick=()=>{openSharedSongPlayer('jm0');nmSongAudio.play().catch(nmSyncAudioUI);};scroll.scrollTop=scroll.scrollHeight;
 };
 const nmBeforeJunePreview=openNetease;
 openNetease=function(page=nmCurrent){nmBeforeJunePreview(page);if(page==='messages'){const row=$('content').querySelector('.nm-xixi-row');if(row){row.querySelector('small').textContent='😭';row.querySelector('time').textContent='6月29日';}}};
 </script><style>.wc-chathead>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.wc-member>span:last-child{width:100%;text-align:center}</style><script>
 const wcEightPersonGroup=['陈思罕','龙哥','lulu杰','Henry','博文','⬅️77','肘纳森','🐷'];
-const wcSister={name:'姐姐',avatar:'assets/sister-avatar.jpg'};
+const wcSister={name:'哥哥',avatar:'assets/sister-avatar.jpg'};
 wcContacts.push(wcSister);
 function wcCrewAvatar(label,color){return 'data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" rx="10" fill="'+color+'"/><text x="50" y="57" fill="white" font-family="sans-serif" font-size="24" text-anchor="middle">'+label+'</text></svg>');}
 wcContacts.find(c=>c.name==='STF').avatar=wcCrewAvatar('STF','#596776');
@@ -1719,7 +1709,7 @@ const wcBeforeHainanRender=renderChatMessages;
 renderChatMessages=function(c){if(c!==wcHainanGroup)return wcBeforeHainanRender(c);const body=$('wechat').querySelector('.wc-chatbody');body.innerHTML='<div class="wc-group-stamp">3月9日</div><div class="wc-group-notice">STF邀请“🐷”和“shChen”加入群聊</div><div class="wc-group-notice">STF更改群名称为“海南弯道超车二人组”</div>'+wcHainanMessages.map(m=>{const stamp=m.stamp?'<div class="wc-group-stamp">'+m.stamp+'</div>':'';if(m.speaker==='陈思罕')return stamp+'<div class="wc-message wc-group-message outgoing"><div class="wc-bubble">'+escapeChat(m.text)+'</div><img class="self-avatar wc-self-photo" src="'+wcSelfPhoto+'" alt="陈思罕的头像"></div>';const person=c.members.find(p=>p.name===m.speaker);return stamp+'<div class="wc-message wc-group-message">'+wcAvatar(person)+'<div class="wc-group-copy"><span class="wc-group-sender">'+escapeChat(person.name)+'</span><div class="wc-bubble">'+escapeChat(m.text)+'</div></div></div>';}).join('');body.scrollTop=body.scrollHeight;};
 </script><style>.wc-schedule-copy{white-space:pre-line;line-height:1.75;font-size:13px}.wc-schedule-message .wc-group-copy{max-width:calc(100% - 50px)}</style><script>
 const wcCrewRoleOrder=["顾晨阳", "林清源", "李浩宇", "周扬", "付彬言", "徐安博", "陈颂", "谢逸舟"];
-const wcCrewSchedule=[{"day": 2, "stamp": "3月2日 06:50", "text": "《我们的少年时代2》3月2日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜02-01场｜教学楼走廊｜新学期碰面\n出场角色：顾晨阳、林清源\n\n11:00｜02-02场｜高一教室｜座位调整\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜02-03场｜操场｜训练分组\n出场角色：顾晨阳、李浩宇、周扬\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 3, "stamp": "3月3日 06:50", "text": "《我们的少年时代2》3月3日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜03-01场｜高一教室｜课堂小插曲\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜03-02场｜食堂｜午餐约定\n出场角色：顾晨阳、林清源\n\n14:30｜03-03场｜篮球场｜第一次对练\n出场角色：顾晨阳、李浩宇、周扬\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 4, "stamp": "3月4日 06:50", "text": "《我们的少年时代2》3月4日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜04-01场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n11:00｜04-02场｜教学楼走廊｜课间争执\n出场角色：林清源、李浩宇\n\n14:30｜04-03场｜器材室｜清点器材\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 5, "stamp": "3月5日 06:50", "text": "《我们的少年时代2》3月5日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜05-01场｜操场｜晨练集合\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜05-02场｜高一教室｜笔记借阅\n出场角色：顾晨阳、林清源\n\n14:30｜05-03场｜篮球场｜配合练习\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 6, "stamp": "3月6日 06:50", "text": "《我们的少年时代2》3月6日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜06-01场｜图书馆｜复习计划\n出场角色：顾晨阳、林清源\n\n11:00｜06-02场｜高一教室｜小组讨论\n出场角色：林清源、李浩宇、徐安博\n\n14:30｜06-03场｜操场｜队内磨合\n出场角色：顾晨阳、李浩宇、周扬\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 7, "stamp": "3月7日 06:50", "text": "《我们的少年时代2》3月7日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜07-01场｜高一教室｜班会讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜07-02场｜篮球场｜战术调整\n出场角色：顾晨阳、周扬、付彬言\n\n14:30｜07-03场｜教学楼走廊｜课后同行\n出场角色：陈颂、谢逸舟\n\n陈颂、谢逸舟今日仅14:30这一场，12:30到服化组准备，14:00到场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 8, "stamp": "3月8日 06:50", "text": "《我们的少年时代2》3月8日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜08-01场｜图书馆｜查阅资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜08-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜08-03场｜器材室｜赛前准备\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 9, "stamp": "3月9日 06:50", "text": "《我们的少年时代2》3月9日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜09-01场｜高一教室｜习题讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜09-02场｜办公室｜请教老师\n出场角色：顾晨阳、林清源\n\n14:30｜09-03场｜篮球场｜基础训练\n出场角色：顾晨阳、周扬、徐安博\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 10, "stamp": "3月10日 06:50", "text": "《我们的少年时代2》3月10日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜10-01场｜教学楼走廊｜晨间碰面\n出场角色：顾晨阳、林清源\n\n11:00｜10-02场｜高一教室｜课堂练习\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜10-03场｜操场｜分组训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 11, "stamp": "3月11日 06:50", "text": "《我们的少年时代2》3月11日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜11-01场｜图书馆｜整理笔记\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜11-02场｜高一教室｜班级值日\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜11-03场｜篮球场｜训练复盘\n出场角色：顾晨阳、李浩宇、周扬\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 12, "stamp": "3月12日 06:50", "text": "《我们的少年时代2》3月12日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜12-01场｜高一教室｜月考动员\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜12-02场｜教学楼走廊｜课后约定\n出场角色：顾晨阳、林清源\n\n14:30｜12-03场｜篮球场｜配合训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂、谢逸舟今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 13, "stamp": "3月13日 06:50", "text": "《我们的少年时代2》3月13日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜13-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n10:30｜13-02场｜教学楼走廊｜归还笔记\n出场角色：林清源、谢逸舟\n\n14:30｜13-03场｜篮球场｜传球练习\n出场角色：顾晨阳、周扬、付彬言\n\n谢逸舟（陈浚铭）今日仅上午10:30这一场，09:00到服化组，10:10到场候戏；预计11:30结束，该场完成后无其他拍摄安排。\n陈颂（陈思罕）今日无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 14, "stamp": "3月14日 06:50", "text": "《我们的少年时代2》3月14日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜14-01场｜操场｜热身训练\n出场角色：顾晨阳、李浩宇、周扬\n\n11:00｜14-02场｜办公室｜谈话\n出场角色：顾晨阳、林清源\n\n14:00｜14-03场｜高一教室｜作业讨论\n出场角色：林清源、李浩宇、徐安博\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 15, "stamp": "3月15日 06:50", "text": "《我们的少年时代2》3月15日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜15-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源\n\n11:00｜15-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜15-03场｜篮球场｜队内配合\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 16, "stamp": "3月16日 06:50", "text": "《我们的少年时代2》3月16日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜16-01场｜高一教室｜课间讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜16-02场｜教学楼走廊｜课后碰面\n出场角色：顾晨阳、陈颂\n\n14:30｜16-03场｜器材室｜整理训练用品\n出场角色：李浩宇、周扬、徐安博\n\n陈颂（陈思罕）今日11:00一场，09:30由工作人员联系到服化组准备，10:40到场候戏；预计12:00结束。\n谢逸舟（陈浚铭）今日无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 17, "stamp": "3月17日 06:50", "text": "《我们的少年时代2》3月17日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜17-01场｜操场｜分组热身\n出场角色：顾晨阳、李浩宇、周扬\n\n11:00｜17-02场｜高一教室｜复习讨论\n出场角色：顾晨阳、林清源、徐安博\n\n14:30｜17-03场｜篮球场｜配合训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 18, "stamp": "3月18日 06:50", "text": "《我们的少年时代2》3月18日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜18-01场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n11:00｜18-02场｜教学楼走廊｜讨论测验\n出场角色：林清源、李浩宇、徐安博\n\n14:00｜18-03场｜篮球场｜基础训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日无拍摄安排，无需到片场候戏。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 19, "stamp": "3月19日 06:50", "text": "《我们的少年时代2》3月19日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜19-01场｜图书馆｜整理错题\n出场角色：顾晨阳、林清源\n\n11:00｜19-02场｜高一教室｜小组复习\n出场角色：顾晨阳、林清源、李浩宇\n\n14:30｜19-03场｜操场｜训练复盘\n出场角色：顾晨阳、周扬、徐安博\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日无拍摄安排，无需到片场候戏。\n\n明日预告：3月20日陈颂、谢逸舟均有拍摄，分别为上午09:30、下午14:00，请两位提前准备。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"day": 20, "stamp": "3月20日 06:50", "text": "《我们的少年时代2》3月20日拍摄通告\n\n各位老师，今日安排如下：\n\n09:30｜20-01场｜教学楼走廊｜借还器材\n出场角色：周扬、陈颂\n\n11:30｜20-02场｜高一教室｜课堂练习\n出场角色：顾晨阳、林清源、李浩宇\n\n14:00｜20-03场｜篮球场边｜课后约定\n出场角色：李浩宇、谢逸舟\n\n陈颂（陈思罕）：08:00到服化组，09:10到场候戏，09:30开拍。\n谢逸舟（陈浚铭）：12:30到服化组，13:40到场候戏，14:00开拍。\n两位各一场，请注意各自到场时间。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 21, "stamp": "3月21日 06:50", "text": "《我们的少年时代2》3月21日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0321-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0321-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0321-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n16:00｜0321-04场｜教学楼走廊｜课后同行\n出场角色：陈颂、谢逸舟\n\n陈颂（陈思罕）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n谢逸舟（陈浚铭）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 22, "stamp": "3月22日 06:50", "text": "《我们的少年时代2》3月22日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0322-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0322-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0322-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 23, "stamp": "3月23日 06:50", "text": "《我们的少年时代2》3月23日拍摄通告\n\n各位老师，今日安排如下：\n\n09:40｜0323-01场｜教学楼走廊｜课前碰面\n出场角色：林清源、谢逸舟\n\n11:00｜0323-02场｜器材室｜借用器材\n出场角色：李浩宇、谢逸舟\n\n14:30｜0323-03场｜操场｜训练磨合\n出场角色：顾晨阳、李浩宇、周扬\n\n谢逸舟（陈浚铭）上午两场，08:40到服化组，09:20到场候戏，预计12:00收工；下午无拍摄安排。\n陈颂（陈思罕）今日无戏，可照常安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 24, "stamp": "3月24日 06:50", "text": "《我们的少年时代2》3月24日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0324-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0324-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0324-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n16:00｜0324-04场｜图书馆｜借阅笔记\n出场角色：林清源、陈颂\n\n陈颂（陈思罕）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 25, "stamp": "3月25日 06:50", "text": "《我们的少年时代2》3月25日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0325-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0325-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0325-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n16:00｜0325-04场｜器材室｜归还器材\n出场角色：李浩宇、谢逸舟\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 26, "stamp": "3月26日 06:50", "text": "《我们的少年时代2》3月26日拍摄通告\n\n各位老师，今日安排如下：\n\n16:00｜0326-01场｜高一教室｜放学后的讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n20:00｜0326-02场｜教学楼走廊｜夜间找人\n出场角色：顾晨阳、陈颂\n\n22:00｜0326-03场｜校门口｜离开学校\n出场角色：陈颂\n\n陈颂（陈思罕）今日为夜戏，18:30到服化组，19:40到场候戏，两场预计23:00拍完。次日上午不安排拍摄，预留休息时间。\n谢逸舟（陈浚铭）今日无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 27, "stamp": "3月27日 06:50", "text": "《我们的少年时代2》3月27日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0327-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0327-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0327-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）昨晚夜戏较晚，今日上午休息，无拍摄安排；下午可自行安排学习。\n谢逸舟（陈浚铭）今日无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 28, "stamp": "3月28日 06:50", "text": "《我们的少年时代2》3月28日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0328-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n10:00｜0328-02场｜教学楼走廊｜寻找课本\n出场角色：陈颂\n\n11:00｜0328-03场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0328-04场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n陈颂（陈思罕）今日1场，首场10:00，08:30到服化组；其余时间无拍摄安排。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 29, "stamp": "3月29日 06:50", "text": "《我们的少年时代2》3月29日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0329-01场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n14:00｜0329-02场｜教学楼走廊｜课后碰面\n出场角色：陈颂、谢逸舟\n\n16:00｜0329-03场｜操场边｜训练后的交谈\n出场角色：顾晨阳、陈颂、谢逸舟\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）均为下午拍摄，12:30到服化组，13:30到片场集合，预计17:30结束；下午不另排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 30, "stamp": "3月30日 06:50", "text": "《我们的少年时代2》3月30日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0330-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0330-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0330-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 3, "day": 31, "stamp": "3月31日 06:50", "text": "《我们的少年时代2》3月31日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0331-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0331-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0331-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n16:00｜0331-04场｜操场边｜训练前碰面\n出场角色：周扬、谢逸舟\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 1, "stamp": "4月1日 06:50", "text": "《我们的少年时代2》4月1日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0401-01场｜操场｜晨间训练\n出场角色：顾晨阳、李浩宇、周扬\n\n11:00｜0401-02场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n14:30｜0401-03场｜高一教室｜小组讨论\n出场角色：林清源、李浩宇、徐安博\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 2, "stamp": "4月2日 06:50", "text": "《我们的少年时代2》4月2日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0402-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n10:00｜0402-02场｜教学楼走廊｜约定复习\n出场角色：陈颂、谢逸舟\n\n11:00｜0402-03场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0402-04场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）今日1场，首场10:00，08:30到服化组；其余时间无拍摄安排。\n\n谢逸舟（陈浚铭）今日1场，首场10:00，08:30到服化组；其余时间无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 3, "stamp": "4月3日 06:50", "text": "《我们的少年时代2》4月3日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0403-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0403-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0403-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 4, "stamp": "4月4日 06:50", "text": "《我们的少年时代2》4月4日拍摄通告\n\n各位老师，今日安排如下：\n\n09:30｜0404-01场｜高一教室｜借阅课堂笔记\n出场角色：林清源、陈颂\n\n11:30｜0404-02场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n14:30｜0404-03场｜操场｜配合训练\n出场角色：顾晨阳、李浩宇、周扬\n\n陈颂（陈思罕）今日仅上午09:30一场，08:00到服化组，预计10:30拍完，下午无拍摄安排。\n谢逸舟（陈浚铭）今日无拍摄安排，可照常学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 5, "stamp": "4月5日 06:50", "text": "《我们的少年时代2》4月5日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0405-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0405-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0405-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 6, "stamp": "4月6日 06:50", "text": "《我们的少年时代2》4月6日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0406-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0406-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0406-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 7, "stamp": "4月7日 06:50", "text": "《我们的少年时代2》4月7日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0407-01场｜操场｜晨间训练\n出场角色：顾晨阳、李浩宇、周扬\n\n11:00｜0407-02场｜办公室｜老师谈话\n出场角色：顾晨阳、林清源\n\n14:30｜0407-03场｜高一教室｜小组讨论\n出场角色：林清源、李浩宇、徐安博\n\n16:00｜0407-04场｜高一教室｜留下值日\n出场角色：林清源、陈颂\n\n陈颂（陈思罕）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n谢逸舟（陈浚铭）今日无拍摄安排，可自行安排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 8, "stamp": "4月8日 06:50", "text": "《我们的少年时代2》4月8日拍摄通告\n\n各位老师，今日安排如下：\n\n10:00｜0408-01场｜高一教室｜小组讨论\n出场角色：顾晨阳、陈颂、谢逸舟\n\n14:00｜0408-02场｜教学楼走廊｜课后约定\n出场角色：陈颂、谢逸舟\n\n16:00｜0408-03场｜操场边｜训练复盘\n出场角色：顾晨阳、周扬、陈颂、谢逸舟\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）上午、下午均有拍摄，08:30到服化组，09:40到场候戏；预计17:30收工，今日不另排学习。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 9, "stamp": "4月9日 06:50", "text": "《我们的少年时代2》4月9日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0409-01场｜图书馆｜整理资料\n出场角色：顾晨阳、林清源、徐安博\n\n11:00｜0409-02场｜食堂｜午餐聊天\n出场角色：顾晨阳、李浩宇\n\n14:30｜0409-03场｜器材室｜赛前准备\n出场角色：林清源、周扬、付彬言\n\n16:00｜0409-04场｜器材室｜清点用品\n出场角色：李浩宇、谢逸舟\n\n陈颂（陈思罕）今日无拍摄安排，可自行安排学习。\n\n谢逸舟（陈浚铭）今日1场，首场16:00，14:30到服化组；其余时间无拍摄安排。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 10, "stamp": "4月10日 06:50", "text": "《我们的少年时代2》4月10日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0410-01场｜图书馆｜归还资料\n出场角色：顾晨阳、林清源、徐安博\n\n14:00｜0410-02场｜高一教室｜整理课桌\n出场角色：林清源、陈颂\n\n16:30｜0410-03场｜教学楼走廊｜离开教室\n出场角色：陈颂\n\n陈颂（陈思罕）今日下午两场，12:30到服化组，预计17:30收工。\n谢逸舟（陈浚铭）今日无拍摄安排。晚间可整理个人书本及行李。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 11, "stamp": "4月11日 06:50", "text": "《我们的少年时代2》4月11日拍摄通告\n\n各位老师，今日安排如下：\n\n08:30｜0411-01场｜高一教室｜课堂讨论\n出场角色：顾晨阳、林清源、李浩宇\n\n11:00｜0411-02场｜教学楼走廊｜课间交流\n出场角色：顾晨阳、林清源\n\n14:30｜0411-03场｜操场｜队内训练\n出场角色：顾晨阳、周扬、付彬言\n\n陈颂（陈思罕）、谢逸舟（陈浚铭）今日均无拍摄安排。陈思罕外出时间已登记；陈浚铭今日休息，不安排集中学习。两位保持电话畅通。\n明日为剧组杀青日，请今晚整理好个人物品，明日按通告到场。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}, {"month": 4, "day": 12, "stamp": "4月12日 06:50", "text": "《我们的少年时代2》4月12日拍摄通告\n\n各位老师，今日安排如下：\n\n09:00｜0412-01场｜高一教室｜班级合影前的准备\n出场角色：顾晨阳、林清源、李浩宇、周扬、付彬言、徐安博\n\n13:30｜0412-02场｜教学楼走廊｜结伴走向操场\n出场角色：陈颂、谢逸舟\n\n15:30｜0412-03场｜操场｜训练结束\n出场角色：顾晨阳、林清源、李浩宇、周扬、付彬言、徐安博\n\n杀青日安排：陈颂（陈思罕）、谢逸舟（陈浚铭）仅13:30一场，12:00到服化组，13:10到场候戏，预计14:30拍完。\n17:00全部拍摄结束，完成杀青留影后按工作人员安排撤场；请检查随身物品，勿遗漏书本及行李。\n\n其余当日出场演员请按首场时间提前60分钟到服化组，提前20分钟到场候戏；调整以群内通知为准。有异议的，直接在群里问"}];
+const wcCrewSchedule=[];
 wcCrewGroup.preview='常务：4月12日杀青日通告';
 const wcBeforeScheduleRender=renderChatMessages;
 renderChatMessages=function(c){if(c!==wcCrewGroup)return wcBeforeScheduleRender(c);const body=$('wechat').querySelector('.wc-chatbody');const sender=wcCrewRoles.find(p=>p.name==='常务');body.innerHTML=wcCrewSchedule.map(m=>'<div class="wc-group-stamp">'+m.stamp+'</div><div class="wc-message wc-group-message wc-schedule-message">'+wcAvatar(sender)+'<div class="wc-group-copy"><span class="wc-group-sender">常务</span><div class="wc-bubble wc-schedule-copy">'+escapeChat(m.text)+'</div></div></div>').join('');body.scrollTop=body.scrollHeight;};
@@ -1740,496 +1730,21 @@ wcHainanGroup.avatarMembers=[{name:'我',avatar:wcSelfPhoto},...wcHainanGroup.me
 </script><style>.wc-group-avatar.wc-group-avatar-four{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:2px}.wc-group-avatar-four img{min-height:0;object-fit:cover}</style><script>
 const wcFamilyDad=wcContacts.find(c=>c.name==='呆地');
 wcFamilyDad.avatar='assets/dad-avatar.png';
-const wcFamilyGroup={name:'勇勇莉莉雯雯罕罕',isGroup:true,members:[wcContacts.find(c=>c.name==='妈咪'),wcContacts.find(c=>c.name==='姐姐'),wcFamilyDad]};
+const wcFamilyGroup={name:'勇勇莉莉雯雯罕罕',isGroup:true,members:[wcContacts.find(c=>c.name==='妈咪'),wcContacts.find(c=>c.name==='哥哥'),wcFamilyDad]};
 wcFamilyGroup.avatarMembers=[{name:'我',avatar:wcSelfPhoto},...wcFamilyGroup.members];
 wcContacts.push(wcFamilyGroup);
 </script><script>
-const wcFamilyMessages=[
- {
-  "speaker": "呆地",
-  "text": "到海南了，车也开过来了",
-  "stamp": "3月6日 16:32"
- },
- {
-  "speaker": "呆地",
-  "text": "狗带着呢，刚遛完"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你还格格带来啦🥺"
- },
- {
-  "speaker": "姐姐",
-  "text": "狗粮带够没"
- },
- {
-  "speaker": "呆地",
-  "text": "带了，后备箱一大袋"
- },
- {
-  "speaker": "姐姐",
-  "text": "你先歇歇，开这么远"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我下来找你们😆"
- },
- {
-  "speaker": "妈咪",
-  "text": "还没收工吗",
-  "stamp": "3月26日 22:06"
- },
- {
-  "speaker": "陈思罕",
-  "text": "还要一会🥶"
- },
- {
-  "speaker": "呆地",
-  "text": "我在车里等，拍完给我发消息"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你先回去睡嘛"
- },
- {
-  "speaker": "呆地",
-  "text": "没事，我眯一会儿"
- },
- {
-  "speaker": "妈咪",
-  "text": "外套穿好，晚上有风"
- },
- {
-  "speaker": "陈思罕",
-  "text": "狗呢",
-  "stamp": "4月6日 16:28"
- },
- {
-  "speaker": "呆地",
-  "text": "睡着了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "想摸"
- },
- {
-  "speaker": "姐姐",
-  "text": "你先写完作业再摸😐"
- },
- {
-  "speaker": "呆地",
-  "text": "趁杀青明天带你去逛逛",
-  "stamp": "4月10日 09:38"
- },
- {
-  "speaker": "呆地",
-  "text": "明天已经跟STF请好假"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好哦🥳"
- },
- {
-  "speaker": "姐姐",
-  "text": "也带上格格，顺便拍两张照片"
- },
- {
-  "speaker": "陈思罕",
-  "text": "杀青啦😆",
-  "stamp": "4月12日 17:26"
- },
- {
-  "speaker": "妈咪",
-  "text": "杀青快乐宝宝，辛苦啦❤️"
- },
- {
-  "speaker": "姐姐",
-  "text": "杀青快乐！！等你回来"
- },
- {
-  "speaker": "呆地",
-  "text": "车停好了，东西慢慢拿，我上来帮你"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，等我把书装好"
- },
- {
-  "speaker": "妈咪",
-  "text": "回家想吃什么，妈妈给你做"
- },
- {
-  "speaker": "陈思罕",
-  "text": "都想吃🥰"
- }
-];
+const wcFamilyMessages=[];
 wcFamilyGroup.preview='陈思罕：都想吃🥰';
 const wcBeforeFamilyRender=renderChatMessages;
 renderChatMessages=function(c){if(c!==wcFamilyGroup)return wcBeforeFamilyRender(c);const body=$('wechat').querySelector('.wc-chatbody');body.innerHTML=wcFamilyMessages.map(m=>{const stamp=m.stamp?'<div class="wc-group-stamp">'+m.stamp+'</div>':'';if(m.speaker==='陈思罕')return stamp+'<div class="wc-message wc-group-message outgoing"><div class="wc-bubble">'+escapeChat(m.text)+'</div>'+wcSelfAvatar()+'</div>';const person=c.members.find(p=>p.name===m.speaker);return stamp+'<div class="wc-message wc-group-message">'+wcAvatar(person)+'<div class="wc-group-copy"><span class="wc-group-sender">'+escapeChat(person.name)+'</span><div class="wc-bubble">'+escapeChat(m.text)+'</div></div></div>';}).join('');body.scrollTop=body.scrollHeight;};
 </script><style>.wc-wrap-copy{white-space:pre-line;line-height:1.8;font-size:14px}</style><script>
-const wcWrapMessages=[
- {
-  "speaker": "常务",
-  "text": "各位老师、各位伙伴，随着今天最后一场戏顺利完成，《我们的少年时代2》正式杀青啦！🎉\n\n从2月25日开机，到今天最后一次确认收工，这个群陪大家走过了47天。每天在这里确认场次、调整时间、通知候场，现在终于可以发一条不用大家提前到场的消息了。\n\n感谢导演和制片团队的信任，感谢各部门老师在现场的配合，也感谢八位演员这段时间的认真和投入。早上的集合、午后的等待、临时调整的场次，还有拍到很晚的夜戏，大家都辛苦了。\n\n有些镜头在成片里可能只有短短几秒，现场却需要一遍遍地走位、确认和重来。谢谢大家每一次听到通知后及时赶到，也谢谢大家在累的时候，仍然愿意为下一条再认真准备一次。\n\n特别想对八位小演员说：这段时间看着你们从一开始熟悉角色、熟悉彼此，到后来能在现场互相接住对方的戏，是一件很开心的事。除了拍摄，还要抽空上课、写作业，你们辛苦了。希望以后想起这个春天，除了记得自己演过的角色，也能记得一起等戏、一起吃饭、一起笑得停不下来的那些时刻。\n\n也感谢一直陪在身边的家人和工作人员。那些等收工的夜晚、帮忙照看的行李、递到手里的水和饭，都是这次拍摄能够顺利完成的一部分。\n\n最后再发一次收工提醒：离组前请检查好证件、手机、充电器和个人物品，借用的服装、道具及时归还；返程安排有变化的，直接联系工作人员，到家后也记得报个平安。\n\n今天就不催大家候场了，好好吃顿饭，好好睡一觉。\n\n祝大家杀青快乐，一路平安！期待我们在荧幕上重逢，也期待下一次见面。❤️",
-  "stamp": "4月12日 17:18"
- },
- {
-  "speaker": "常务",
-  "text": "杀青快乐！🎉"
- },
- {
-  "speaker": "导演",
-  "text": "杀青快乐，大家辛苦了！"
- },
- {
-  "speaker": "制片人",
-  "text": "杀青快乐！感谢各位这段时间的付出。"
- },
- {
-  "speaker": "统筹",
-  "text": "杀青快乐！🎉"
- },
- {
-  "speaker": "现场副导演",
-  "text": "杀青快乐，大家都好好休息！"
- },
- {
-  "speaker": "STF",
-  "text": "杀青快乐🥳"
- },
- {
-  "speaker": "龙哥",
-  "text": "杀青快乐！！🎉"
- },
- {
-  "speaker": "lulu杰",
-  "text": "杀青快乐🎉🎉"
- },
- {
-  "speaker": "Henry",
-  "text": "杀青快乐！"
- },
- {
-  "speaker": "博文",
-  "text": "杀青快乐🥳"
- },
- {
-  "speaker": "⬅️77",
-  "text": "杀青快乐！！😆"
- },
- {
-  "speaker": "肘纳森",
-  "text": "杀青快乐🎉"
- },
- {
-  "speaker": "陈思罕",
-  "text": "杀青快乐！！！😆"
- },
- {
-  "speaker": "🐷",
-  "text": "杀青快乐🥳🥳"
- }
-];
+const wcWrapMessages=[];
 const wcBeforeWrapRender=renderChatMessages;
 renderChatMessages=function(c){wcBeforeWrapRender(c);if(c!==wcCrewGroup)return;const body=$('wechat').querySelector('.wc-chatbody');body.insertAdjacentHTML('beforeend',wcWrapMessages.map(m=>{const stamp=m.stamp?'<div class="wc-group-stamp">'+m.stamp+'</div>':'';if(m.speaker==='陈思罕')return stamp+'<div class="wc-message wc-group-message outgoing"><div class="wc-bubble">'+escapeChat(m.text)+'</div>'+wcSelfAvatar()+'</div>';const person=c.members.find(p=>p.name===m.speaker);return stamp+'<div class="wc-message wc-group-message">'+wcAvatar(person)+'<div class="wc-group-copy"><span class="wc-group-sender">'+escapeChat(person.name)+'</span><div class="wc-bubble wc-wrap-copy">'+escapeChat(m.text)+'</div></div></div>';}).join(''));body.scrollTop=body.scrollHeight;};
 wcCrewGroup.preview='🐷：杀青快乐🥳🥳';
 </script><script>
-const wcBowenMessages=[
- {
-  "speaker": "陈思罕",
-  "text": "博文～",
-  "stamp": "3月5日 19:42"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我有数学题不会😭"
- },
- {
-  "speaker": "博文",
-  "text": "拿着题来找我吧，我在房间"
- },
- {
-  "speaker": "陈思罕",
-  "text": "来了🥺"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你刚刚说不能直接约掉，是因为那部分可能是0吗",
-  "stamp": "3月5日 20:27"
- },
- {
-  "speaker": "博文",
-  "text": "对，先把等于0的情况单独看一下"
- },
- {
-  "speaker": "陈思罕",
-  "text": "懂了，这次真懂了🤓"
- },
- {
-  "speaker": "博文",
-  "text": "那你自己再做一遍试试"
- },
- {
-  "speaker": "陈思罕",
-  "text": "博文～今天再救我一下😭",
-  "stamp": "4月3日 18:27"
- },
- {
-  "speaker": "博文",
-  "text": "又有题不会了？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯🥺"
- },
- {
-  "speaker": "博文",
-  "text": "拿来吧，我刚好有空"
- },
- {
-  "speaker": "陈思罕",
-  "text": "刚刚那题我自己重做出来了🤓",
-  "stamp": "4月3日 19:12"
- },
- {
-  "speaker": "博文",
-  "text": "这次几个解"
- },
- {
-  "speaker": "陈思罕",
-  "text": "两个😎"
- },
- {
-  "speaker": "博文",
-  "text": "对，别再漏了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "周扬学长，杀青快乐😆",
-  "stamp": "4月12日 17:34"
- },
- {
-  "speaker": "博文",
-  "text": "杀青快乐呀，陈小颂！"
- },
- {
-  "speaker": "博文",
-  "text": "回去还一起跳舞呢"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，到时候接着找你🥰"
- },
- {
-  "speaker": "陈思罕",
-  "text": "knock knock～",
-  "stamp": "4月28日 18:09"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你在哪个教室"
- },
- {
-  "speaker": "博文",
-  "text": "舞蹈三"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我去找你，刚才那段又没跟上🥺"
- },
- {
-  "speaker": "博文",
-  "text": "来，我也再顺一遍"
- },
- {
-  "speaker": "博文",
-  "text": "水杯落练习室了？",
-  "stamp": "5月14日 21:12"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我的😵‍💫"
- },
- {
-  "speaker": "博文",
-  "text": "给你放门口柜子上了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "谢谢🥰，马上回去拿"
- },
- {
-  "speaker": "陈思罕",
-  "text": "博文生日快乐！！！🎂🎂",
-  "stamp": "6月1日 08:06"
- },
- {
-  "speaker": "陈思罕",
-  "text": "新的一岁每天都有好事发生🥰"
- },
- {
-  "speaker": "博文",
-  "text": "谢谢思罕😆"
- },
- {
-  "speaker": "陈思罕",
-  "text": "还有蛋糕吗🥺"
- },
- {
-  "speaker": "博文",
-  "text": "猜到你没吃够，给你留了一口😘"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好耶🥳"
- },
- {
-  "speaker": "陈思罕",
-  "text": "博文，你之前生地会考紧张吗",
-  "stamp": "6月25日 22:08"
- },
- {
-  "speaker": "博文",
-  "text": "紧张啊"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我这几天一直觉得没背完"
- },
- {
-  "speaker": "陈思罕",
-  "text": "一翻书就感觉哪都不会🥲"
- },
- {
-  "speaker": "博文",
-  "text": "你不是都做过一遍了吗，先看标出来的错题"
- },
- {
-  "speaker": "博文",
-  "text": "别临睡前又从第一页重背"
- },
- {
-  "speaker": "陈思罕",
-  "text": "可是怕考的时候突然想不起来🥺"
- },
- {
-  "speaker": "博文",
-  "text": "我之前也这么想，真拿到卷子就开始找会做的了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "借我一点你的淡定😭"
- },
- {
-  "speaker": "博文",
-  "text": "我当时也没多淡定，今天先去睡觉吧"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，我把这页看完就睡🥺"
- },
- {
-  "speaker": "陈思罕",
-  "text": "考完了，终于🥹",
-  "stamp": "6月30日 18:46"
- },
- {
-  "speaker": "博文",
-  "text": "怎么样"
- },
- {
-  "speaker": "陈思罕",
-  "text": "比我想的好一点，有几题还不太确定"
- },
- {
-  "speaker": "博文",
-  "text": "先别对答案了，在外面好好休息休息"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯，晚上的飞机回来✈️"
- },
- {
-  "speaker": "陈思罕",
-  "text": "博文～今天彩排那段又卡了🥺",
-  "stamp": "8月10日 22:17"
- },
- {
-  "speaker": "博文",
-  "text": "你前半段比昨天稳了"
- },
- {
-  "speaker": "博文",
-  "text": "明天上课前我陪你再走一遍"
- },
- {
-  "speaker": "陈思罕",
-  "text": "那我明天来找你🥰"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我今天真的力竭了🥶",
-  "stamp": "8月13日 23:32"
- },
- {
-  "speaker": "博文",
-  "text": "哈哈哈哈但你体力进步了好多呢💪🏻"
- },
- {
-  "speaker": "博文",
-  "text": "今晚早点睡，别打游戏啦"
- },
- {
-  "speaker": "陈思罕",
-  "text": "收到🫡"
- },
- {
-  "speaker": "陈思罕",
-  "text": "结束了！！！",
-  "stamp": "8月17日 22:36"
- },
- {
-  "speaker": "博文",
-  "text": "辛苦了😆"
- },
- {
-  "speaker": "陈思罕",
-  "text": "明天终于不用早起化妆啦😤"
- },
- {
-  "speaker": "博文",
-  "text": "先把东西收好，别又落水杯"
- },
- {
-  "speaker": "陈思罕",
-  "text": "这次拿着呢🤓"
- },
- {
-  "speaker": "博文",
-  "text": "回学校了吗，感觉怎么样",
-  "stamp": "9月1日 19:06"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我现在在上补习班，每天起的都好早😵‍💫"
- },
- {
-  "speaker": "博文",
-  "text": "过两天就习惯了，晚上早点睡"
- },
- {
-  "speaker": "博文",
-  "text": "努力备考～"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，你也加油"
- },
- {
-  "speaker": "陈思罕",
-  "text": "小高中生"
- }
-];
+const wcBowenMessages=[];
 const wcBowenContact=wcContacts.find(c=>c.name==='博文');
 wcBowenContact.preview="小高中生";
 const wcBeforeBowenRender=renderChatMessages;
@@ -2299,7 +1814,7 @@ const nmUpdatedStory=[
   "type": "text",
   "speaker": "我",
   "text": "今天笑场的时候脑子里一直是这首歌",
-  "quote": "等待复活码：[歌曲] 芳草地"
+  "quote": "该用户已消失：[歌曲] 芳草地"
  },
  {
   "date": null,
@@ -2349,7 +1864,7 @@ const nmUpdatedStory=[
   "date": null,
   "type": "text",
   "speaker": "🐷",
-  "text": "怎么昵称改成该用户已消失了"
+  "text": "怎么昵称改成等待复活码了"
  },
  {
   "date": null,
@@ -2488,7 +2003,7 @@ const nmBeforeStoryChat=openXixiChat;
 openXixiChat=function(){
  nmBeforeStoryChat();const scroll=$('content').querySelector('.nm-dm-scroll');const profile=scroll.querySelector('.nm-dm-profile');const invitation=scroll.querySelector('.nm-dm-incoming').outerHTML;scroll.replaceChildren(profile);
  const rows=nmUpdatedStory.map((m,i)=>{const date=m.date?'<div class="nm-dm-time nm-song-date">'+escapeChat(m.date)+'</div>':'';if(m.type==='invite')return date+invitation;
- const own=m.speaker==='我';const avatar=own?'<span class="nm-dm-own-avatar" aria-label="该用户已消失的默认头像">'+nmDefaultAvatar+'</span>':'<img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="等待复活码的头像">';let content;
+ const own=m.speaker==='我';const avatar=own?'<span class="nm-dm-own-avatar" aria-label="等待复活码的默认头像">'+nmDefaultAvatar+'</span>':'<img class="nm-dm-small-avatar" src="'+nmXixiAvatar+'" alt="该用户已消失的头像">';let content;
  if(m.type==='song'){const t=m.kind&&nmExtraTracks[m.kind],cover=t?.cover||(m.kind==='fangcaodi'?'assets/fangcaodi-cover.jpg':m.kind==='window'?nmSharedWindowCover:null);const art=cover?'<span class="nm-shared-cover"><img class="'+(m.kind==='window'?'':'nm-story-cover')+'" src="'+cover+'" alt="'+escapeChat(m.title)+'封面"><span class="nm-shared-play">▶</span></span>':'<span class="nm-shared-cover nm-story-placeholder" aria-label="封面待补充">♫</span>';content='<div class="nm-shared-song">'+(m.text?'<p class="nm-shared-copy">'+escapeChat(m.text)+'</p>':'')+'<button class="nm-shared-link" data-nm-story-song="'+i+'" aria-label="打开歌曲 '+escapeChat(m.title)+'">'+art+'<span class="nm-shared-title"><em>单曲</em>'+escapeChat(m.title)+'</span>'+(t?.artist?'<span class="nm-shared-artist">'+escapeChat(t.artist)+'</span>':'')+'</button></div>';}
  else content='<div class="'+(own?'nm-dm-blue':'nm-dm-gray')+'">'+escapeChat(m.text)+(m.quote?'<button class="nm-story-quote" data-nm-story-quote>'+escapeChat(m.quote)+'</button>':'')+'</div>';
  return date+'<div '+(m.anchor?'id="'+m.anchor+'" ':'')+'class="'+(own?'nm-dm-outgoing':'nm-dm-incoming')+'">'+(own?content+avatar:avatar+content)+'</div>';}).join('');scroll.insertAdjacentHTML('beforeend',rows);
@@ -2504,387 +2019,13 @@ function dismissKeyboardOutside(event){if(!$('virtualKeyboard'))return;const tar
 document.addEventListener('pointerdown',dismissKeyboardOutside,true);
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeVirtualKeyboard();});
 </script><script>
-const wcHenryMessages=[
- {
-  "speaker": "Henry",
-  "text": "刚刚楼下看见格格了欸！",
-  "stamp": "3月6日 20:18"
- },
- {
-  "speaker": "陈思罕",
-  "text": "对，我爸一起带过来了🥺"
- },
- {
-  "speaker": "Henry",
-  "text": "难怪你刚才走路都一蹦一蹦的，开心哦～"
- },
- {
-  "speaker": "陈思罕",
-  "text": "是呀😝"
- },
- {
-  "speaker": "陈思罕",
-  "text": "函瑞，你外套怎么这么香",
-  "stamp": "3月15日 18:46"
- },
- {
-  "speaker": "Henry",
-  "text": "喷了香水呀，喜欢吗"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好闻🥺"
- },
- {
-  "speaker": "Henry",
-  "text": "那我回酒店给你也喷喷😼"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好呀好呀😗"
- },
- {
-  "speaker": "Henry",
-  "text": "思罕，你的外套在椅背上，别忘了拿哦～",
-  "stamp": "3月26日 22:14"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，我这边还没结束🥶"
- },
- {
-  "speaker": "Henry",
-  "text": "我看到了，辛苦哦😿最后一场了吧"
- },
- {
-  "speaker": "陈思罕",
-  "text": "应该是，我爸还在外面等"
- },
- {
-  "speaker": "Henry",
-  "text": "那拍完就快去吧！东西没拿齐的话明天再找"
- },
- {
-  "speaker": "陈思罕",
-  "text": "Henry杀青快乐🥳",
-  "stamp": "4月12日 17:42"
- },
- {
-  "speaker": "Henry",
-  "text": "杀青快乐呀，思罕🥳"
- },
- {
-  "speaker": "Henry",
-  "text": "今天终于可以好好睡一觉了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我想先跟格格玩一会🥺"
- },
- {
-  "speaker": "Henry",
-  "text": "去吧去吧！它都等你下班这么久了，快陪它好好玩玩～"
- },
- {
-  "speaker": "Henry",
-  "text": "思罕，你今天怎么下课就不说话了呀",
-  "stamp": "4月29日 20:23"
- },
- {
-  "speaker": "陈思罕",
-  "text": "刚刚那段总是跳不好😵‍💫"
- },
- {
-  "speaker": "Henry",
-  "text": "我还以为你不舒服呢"
- },
- {
-  "speaker": "Henry",
-  "text": "没事的嘛，刚回来总需要时间调整的，你要相信自己！明天你站我旁边吧，我们一起练～"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好呀🥺爱你！😙"
- },
- {
-  "speaker": "Henry",
-  "text": "今天看你一直在翻你那个小本子",
-  "stamp": "6月26日 22:37"
- },
- {
-  "speaker": "陈思罕",
-  "text": "生地马上要考了，感觉背不完😭"
- },
- {
-  "speaker": "Henry",
-  "text": "我就说你怎么连吃饭都在看！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "而且越看越慌🥲"
- },
- {
-  "speaker": "Henry",
-  "text": "不慌嘛，你这几天已经看了好多了，相信自己～"
- },
- {
-  "speaker": "Henry",
-  "text": "明天你要是想背，我陪你过一遍，你背我听着"
- },
- {
-  "speaker": "陈思罕",
-  "text": "真的吗🥺"
- },
- {
-  "speaker": "Henry",
-  "text": "真的呀，卡住了你就看一眼，我又不扣你分🤓"
- },
- {
-  "speaker": "陈思罕",
-  "text": "那我明天找你😭"
- },
- {
-  "speaker": "陈思罕",
-  "text": "函瑞！我考完了！🥹",
-  "stamp": "6月30日 19:12"
- },
- {
-  "speaker": "Henry",
-  "text": "终于！！！快好好犒劳下自己，什么时候回来呀，想你了！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "晚上回来✈️"
- },
- {
-  "speaker": "Henry",
-  "text": "好耶，到的时候给我发个消息，给你留了好吃的👻"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你最好啦！🥰"
- },
- {
-  "speaker": "Henry",
-  "text": "思罕，今天彩排的衣服别乱塞哦，明天找不到又要着急了",
-  "stamp": "8月11日 21:38"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我叠好了🤓"
- },
- {
-  "speaker": "Henry",
-  "text": "我们思罕真棒～你那个袋子我放最上面了哦，到时候方便拿"
- },
- {
-  "speaker": "陈思罕",
-  "text": "收到，函瑞同学🫡"
- },
- {
-  "speaker": "Henry",
-  "text": "下台的时候是不是累懵了呀",
-  "stamp": "8月13日 23:41"
- },
- {
-  "speaker": "陈思罕",
-  "text": "是的，我脑子都空了🥶"
- },
- {
-  "speaker": "Henry",
-  "text": "怪不得呢，刚刚喊你两声你都没听见"
- },
- {
-  "speaker": "陈思罕",
-  "text": "对不起🥺"
- },
- {
-  "speaker": "Henry",
-  "text": "哎呀，这有什么对不起的嘛，快去睡觉吧，好好休息一下"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好嘞，你也是哦，晚安💤😴"
- },
- {
-  "speaker": "Henry",
-  "text": "快出来思罕，咱们车就等你发车了",
-  "stamp": "8月17日 22:48"
- },
- {
-  "speaker": "Henry",
-  "text": "再晚走一会咱们也要被堵在里面了！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我马上来！这四天公演结束了，终于可以好好休息一下了🤓"
- },
- {
-  "speaker": "Henry",
-  "text": "是哦，明天可以慢慢吃早饭了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "先睡到自然醒🥳"
- },
- {
-  "speaker": "陈思罕",
-  "text": "函瑞同学，我刚刚在商场闻了你给我推荐的那个香水😐",
-  "stamp": "8月20日 15:26"
- },
- {
-  "speaker": "Henry",
-  "text": "感觉怎么样，不喜欢嘛？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "没有，很好闻！但是在我手上好像跟你身上不太一样🤨"
- },
- {
-  "speaker": "Henry",
-  "text": "哈哈哈哈哈所以才让你自己试一下看喜不喜欢嘛"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我现在走两步就闻一下自己😶"
- },
- {
-  "speaker": "Henry",
-  "text": "我不得行了吧，我们思罕咋那么可爱哟"
- },
- {
-  "speaker": "Henry",
-  "text": "别光顾着闻香水了哦，去商场有没有买点什么，张函瑞非常好奇之"
- },
- {
-  "speaker": "陈思罕",
-  "text": "就买了件外套，香港商场太冷了🥶"
- },
- {
-  "speaker": "Henry",
-  "text": "哈哈哈哈哈哈哈"
- },
- {
-  "speaker": "Henry",
-  "text": "最近学习怎么样呀～思罕",
-  "stamp": "9月17日 20:14"
- },
- {
-  "speaker": "陈思罕",
-  "text": "补习班中😵‍💫"
- },
- {
-  "speaker": "Henry",
-  "text": "辛苦哦，我最近也是有点累晕了吧"
- },
- {
-  "speaker": "Henry",
-  "text": "那我们都好好加油吧⛽️，等待下次见面～"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯嗯！🤓"
- },
- {
-  "speaker": "陈思罕",
-  "text": "函瑞！！！生日快乐🎂🎂🥳！新的一岁也要更快乐更健康更幸福🤓🫶🏻",
-  "stamp": "10月18日 10:18"
- },
- {
-  "speaker": "Henry",
-  "text": "谢谢你呀思罕🥰我们都好久没见了，很想你呀，你也要天天开心，我们一起继续前进～"
- }
-];
+const wcHenryMessages=[];
 const wcHenryContact=wcContacts.find(c=>c.name==='Henry');
-wcHenryContact.preview=wcHenryMessages.at(-1).text;
+wcHenryContact.preview=wcHenryMessages.at(-1)?.text||'';
 const wcBeforeHenryRender=renderChatMessages;
 renderChatMessages=function(c){if(c!==wcHenryContact)return wcBeforeHenryRender(c);const body=$('wechat').querySelector('.wc-chatbody');body.innerHTML=wcHenryMessages.map(m=>{const stamp=m.stamp?'<div class="wc-group-stamp">'+m.stamp+'</div>':'';return stamp+(m.speaker==='陈思罕'?'<div class="wc-message wc-group-message outgoing"><div class="wc-bubble">'+escapeChat(m.text)+'</div>'+wcSelfAvatar()+'</div>':'<div class="wc-message wc-group-message">'+wcAvatar(c)+'<div class="wc-bubble">'+escapeChat(m.text)+'</div></div>');}).join('');body.scrollTop=body.scrollHeight;};
 </script><script>
-const wcLuluMessages=[
- {
-  "speaker": "lulu杰",
-  "text": "你那个充电头还在吗",
-  "stamp": "6月18日 19:23"
- },
- {
-  "speaker": "陈思罕",
-  "text": "在，要用吗"
- },
- {
-  "speaker": "lulu杰",
-  "text": "嗯"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我放桌上了"
- },
- {
-  "speaker": "lulu杰",
-  "text": "刚刚分组练舞你怎么走了",
-  "stamp": "7月21日 18:46"
- },
- {
-  "speaker": "陈思罕",
-  "text": "以为你那边够人了"
- },
- {
-  "speaker": "lulu杰",
-  "text": "又没说不让你过来"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好的👌，下次来"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你鸡腿吃完了吗",
-  "stamp": "8月2日 21:36"
- },
- {
-  "speaker": "lulu杰",
-  "text": "吃了"
- },
- {
-  "speaker": "lulu杰",
-  "text": "那不是你最爱吃的吗"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯，我觉得你应该也会喜欢😶"
- },
- {
-  "speaker": "lulu杰",
-  "text": "还行吧"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你点的大灰狼三明治挺好吃的"
- },
- {
-  "speaker": "lulu杰",
-  "text": "曲奇呢"
- },
- {
-  "speaker": "陈思罕",
-  "text": "留着明天吃"
- },
- {
-  "speaker": "lulu杰",
-  "text": "别放包里又忘了  ，最后全压碎了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "不会😎"
- },
- {
-  "speaker": "lulu杰",
-  "text": "明天带过来"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好，一起吃"
- }
-];
+const wcLuluMessages=[];
 const wcLuluContact=wcContacts.find(c=>c.name==='lulu杰');
 wcLuluContact.preview="好，一起吃";
 const wcBeforeLuluRender=renderChatMessages;
@@ -2911,8 +2052,8 @@ function deliverEmergencySongNotification(){
  nmUpdatedStory.push({date:'刚刚',type:'song',speaker:'🐷',title:'紧急联络人',text:nmEmergencyCaption,kind});
  const inNetease=!$('panel').classList.contains('hidden')&&!!$('content').querySelector('.nm-dm-scroll,.nm-message-list');
  if(inNetease&&nmCurrent==='xixi'){openXixiChat();nmEmergencyRead=true;}else if(inNetease&&nmCurrent==='messages')openNetease('messages');
- const banner=document.createElement('button');banner.id='nmEmergencyNotification';banner.className='message-banner nm-emergency-banner';banner.setAttribute('aria-label','网易云音乐，等待复活码分享歌曲紧急联络人，'+nmEmergencyCaption+'，点击查看');
- banner.innerHTML='<span class="banner-icon" aria-hidden="true"><img src="'+track.cover+'" alt=""></span><span class="banner-copy"><span class="banner-top"><strong>等待复活码 · 网易云音乐</strong><small>现在</small></span><span class="banner-text">'+escapeChat('[歌曲] 紧急联络人：'+nmEmergencyCaption)+'</span></span>';
+ const banner=document.createElement('button');banner.id='nmEmergencyNotification';banner.className='message-banner nm-emergency-banner';banner.setAttribute('aria-label','网易云音乐，该用户已消失分享歌曲紧急联络人，'+nmEmergencyCaption+'，点击查看');
+ banner.innerHTML='<span class="banner-icon" aria-hidden="true"><img src="'+track.cover+'" alt=""></span><span class="banner-copy"><span class="banner-top"><strong>该用户已消失 · 网易云音乐</strong><small>现在</small></span><span class="banner-text">'+escapeChat('[歌曲] 紧急联络人：'+nmEmergencyCaption)+'</span></span>';
  banner.onclick=()=>{setStoryClockStage('musicOpened');closeVirtualKeyboard();banner.remove();openNetease('xixi');};phoneRoot.append(banner);playMessageSound();
  setTimeout(()=>banner.remove(),11000);
 }
@@ -2923,183 +2064,7 @@ function nmPlayShun(kind){openSharedSongPlayer(kind);nmSongAudio.play().catch(nm
 const nmBeforeShunSongs=openNetease;
 openNetease=function(page=nmCurrent){nmBeforeShunSongs(page);if(page!=='ranking')return;document.querySelectorAll('.nm-song-row').forEach(row=>{const title=row.querySelector('.nm-song-title')?.textContent;const key=title&&nmExtraKind(title);if(!key?.startsWith('shun'))return;row.setAttribute('role','button');row.tabIndex=0;row.setAttribute('aria-label','播放'+title);row.onclick=()=>nmPlayShun(key);row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();nmPlayShun(key);}};});};
 </script><script>
-const wcLonggeMessages=[
- {
-  "speaker": "陈思罕",
-  "text": "龙哥，来不来",
-  "stamp": "3月4日 19:50"
- },
- {
-  "speaker": "龙哥",
-  "text": "来什么"
- },
- {
-  "speaker": "陈思罕",
-  "text": "🔫"
- },
- {
-  "speaker": "龙哥",
-  "text": "拉我"
- },
- {
-  "speaker": "陈思罕",
-  "text": "这么好说话今天"
- },
- {
-  "speaker": "龙哥",
-  "text": "再不拉我就走了"
- },
- {
-  "speaker": "龙哥",
-  "text": "听说你跟浚铭被抓去写作业了",
-  "stamp": "3月10日 20:36"
- },
- {
-  "speaker": "陈思罕",
-  "text": "对，STF还给我们建了个群🥶"
- },
- {
-  "speaker": "龙哥",
-  "text": "今天写完没"
- },
- {
-  "speaker": "陈思罕",
-  "text": "of course，我俩中午还偷点了外卖 😈"
- },
- {
-  "speaker": "龙哥",
-  "text": "你还飙上洋语了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "🤪"
- },
- {
-  "speaker": "龙哥",
-  "text": "明天拍完要不要在剧场打会儿篮球",
-  "stamp": "3月23日 18:42"
- },
- {
-  "speaker": "陈思罕",
-  "text": "别，最近我雷篮球"
- },
- {
-  "speaker": "龙哥",
-  "text": "那我找陈浚铭"
- },
- {
-  "speaker": "陈思罕",
-  "text": "那我考虑一下吧"
- },
- {
-  "speaker": "龙哥",
-  "text": "你今天跑哪去了",
-  "stamp": "4月11日 18:27"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我爸带我出去玩了"
- },
- {
-  "speaker": "龙哥",
-  "text": "回来给我带点零食"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你最近没戏？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "求我😎"
- },
- {
-  "speaker": "龙哥",
-  "text": "陈思罕。"
- },
- {
-  "speaker": "陈思罕",
-  "text": "带了带了～"
- },
- {
-  "speaker": "陈思罕",
-  "text": "龙哥杀青快乐！！！",
-  "stamp": "4月12日 17:48"
- },
- {
-  "speaker": "龙哥",
-  "text": "杀青快乐，小孩"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我要回深圳了，没法和你打篮球了😭"
- },
- {
-  "speaker": "龙哥",
-  "text": "我怎么看这句话不太对呢"
- },
- {
-  "speaker": "陈思罕",
-  "text": "干嘛呀"
- },
- {
-  "speaker": "陈思罕",
-  "text": "龙哥生日快乐！！！🎂🎂🎂",
-  "stamp": "5月11日 00:00"
- },
- {
-  "speaker": "陈思罕",
-  "text": "天天开心，想做的事都顺顺利利🥳"
- },
- {
-  "speaker": "龙哥",
-  "text": "卡得挺准嘛"
- },
- {
-  "speaker": "陈思罕",
-  "text": "那必须，我可是特意要的手机，守着发的"
- },
- {
-  "speaker": "龙哥",
-  "text": "行，收到你的祝福了，快去睡"
- },
- {
-  "speaker": "陈思罕",
-  "text": "明天蛋糕给我分一块大的🥺"
- },
- {
-  "speaker": "龙哥",
-  "text": "少不了你的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "爱你龙哥🥰"
- },
- {
-  "speaker": "陈思罕",
-  "text": "刚刚谁在门口吓我😐",
-  "stamp": "5月24日 21:16"
- },
- {
-  "speaker": "龙哥",
-  "text": "不知道啊"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我都看见你鞋了"
- },
- {
-  "speaker": "龙哥",
-  "text": "那你还问 😛"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你等着😤"
- },
- {
-  "speaker": "龙哥",
-  "text": "来，门没关"
- }
-];
+const wcLonggeMessages=[];
 const wcLonggeContact=wcContacts.find(c=>c.name==='龙哥');
 wcLonggeContact.preview="来，门没关";
 const wcBeforeLonggeRender=renderChatMessages;
@@ -3126,223 +2091,9 @@ renderChatMessages=function(c){if(c!==wcLonggeContact)return wcBeforeLonggeRende
 .nm-mention-body .nm-like-source{margin-top:7px;color:#6d7280;font-size:11px}
 </style>
 <script>
-const wcJonathanMessages=[
- {
-  "speaker": "肘纳森",
-  "text": "hey我这里有你要的饮料",
-  "stamp": "3月2日 13:08"
- },
- {
-  "speaker": "陈思罕",
-  "text": "！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我来拿！"
- },
- {
-  "speaker": "肘纳森",
-  "text": "😎"
- },
- {
-  "speaker": "陈思罕",
-  "text": "cyhcyh",
-  "stamp": "3月27日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "速速速 6号棚有人找"
- },
- {
-  "speaker": "肘纳森",
-  "text": "🤨🤨🤨okokok"
- },
- {
-  "speaker": "肘纳森",
-  "text": "今天有人夸你，我听到了，哈哈😄",
-  "stamp": "4月11日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "诶呀，真的假的"
- },
- {
-  "speaker": "肘纳森",
-  "text": "真的"
- },
- {
-  "speaker": "肘纳森",
-  "text": "那里有个导师夸你很cute"
- },
- {
-  "speaker": "陈思罕",
-  "text": "谢谢但是哪里来的导师？"
- },
- {
-  "speaker": "肘纳森",
-  "text": "emm…你知道的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "？哦哦好的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "杀青快乐Jonasen！",
-  "stamp": "4月12日"
- },
- {
-  "speaker": "肘纳森",
-  "text": "？"
- },
- {
-  "speaker": "肘纳森",
-  "text": "Jonathan，plz"
- },
- {
-  "speaker": "肘纳森",
-  "text": "杀青快乐😁，陈思干"
- },
- {
-  "speaker": "陈思罕",
-  "text": "OMG，我错了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "生日快乐！",
-  "stamp": "5月9日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "Jonathan！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "这次打对了吼吼"
- },
- {
-  "speaker": "肘纳森",
-  "text": "对的对的"
- },
- {
-  "speaker": "肘纳森",
-  "text": "thx！思罕！"
- },
- {
-  "speaker": "陈思罕",
-  "text": "音响你用完了么",
-  "stamp": "5月24日"
- },
- {
-  "speaker": "肘纳森",
-  "text": "5min"
- },
- {
-  "speaker": "陈思罕",
-  "text": "OK"
- },
- {
-  "speaker": "陈思罕",
-  "text": "同是天涯沦落人",
-  "stamp": "7月1日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "相逢何必曾相识啊！"
- },
- {
-  "speaker": "肘纳森",
-  "text": "这是歌词吗？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "…"
- },
- {
-  "speaker": "陈思罕",
-  "text": "也可以是"
- },
- {
-  "speaker": "肘纳森",
-  "text": "哦哦，第一次和你合作呀思罕"
- },
- {
-  "speaker": "肘纳森",
-  "text": "我很期待呢"
- },
- {
-  "speaker": "肘纳森",
-  "text": "😁😁😁"
- },
- {
-  "speaker": "陈思罕",
-  "text": "哦吼吼吼我也是"
- },
- {
-  "speaker": "陈思罕",
-  "text": "合十表情包",
-  "image": "assets/jonathan-chat-sticker-1.jpg"
- },
- {
-  "speaker": "陈思罕",
-  "text": "快来508选编曲",
-  "stamp": "7月4日"
- },
- {
-  "speaker": "肘纳森",
-  "text": "OK，我跳完这个就来"
- },
- {
-  "speaker": "肘纳森",
-  "text": "403！",
-  "stamp": "7月8日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "👌"
- },
- {
-  "speaker": "肘纳森",
-  "text": "好久没排teeth了，你什么时候有空来109？",
-  "stamp": "7月28日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "现在就可以👻"
- },
- {
-  "speaker": "肘纳森",
-  "text": "今天这遍简直perfect！",
-  "stamp": "8月9日"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嘿嘿😁"
- },
- {
-  "speaker": "陈思罕",
-  "text": "再接再厉！"
- },
- {
-  "speaker": "肘纳森",
-  "text": "跳舞为什么要接厉？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "不用，不用……"
- },
- {
-  "speaker": "陈思罕",
-  "text": "大获全胜！",
-  "stamp": "8月16日"
- },
- {
-  "speaker": "肘纳森",
-  "text": "We won!"
- }
-];
+const wcJonathanMessages=[];
 const wcJonathanContact=wcContacts.find(contact=>contact.name==='肘纳森');
-wcJonathanContact.preview=wcJonathanMessages.at(-1).text;
+wcJonathanContact.preview=wcJonathanMessages.at(-1)?.text||'';
 const wcBeforeJonathanRender=renderChatMessages;
 renderChatMessages=function(contact){
  if(contact!==wcJonathanContact)return wcBeforeJonathanRender(contact);
@@ -3360,489 +2111,7 @@ renderChatMessages=function(contact){
 </script>
 
 <script>
-const wc77Messages=[
- {
-  "speaker": "陈思罕",
-  "text": "左奇函",
-  "stamp": "3月5日 19:26"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你在哪"
- },
- {
-  "speaker": "⬅️77",
-  "text": "楼下"
- },
- {
-  "speaker": "⬅️77",
-  "text": "怎么了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "没事"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我来找你玩😝"
- },
- {
-  "speaker": "⬅️77",
-  "text": "来"
- },
- {
-  "speaker": "⬅️77",
-  "text": "顺便把我充电器带下来"
- },
- {
-  "speaker": "陈思罕",
-  "text": "原来我只是个送充电器的😐"
- },
- {
-  "speaker": "⬅️77",
-  "text": "对 还得包邮"
- },
- {
-  "speaker": "陈思罕",
-  "text": "77你回去了吗",
-  "stamp": "3月14日 21:08"
- },
- {
-  "speaker": "⬅️77",
-  "text": "还没 咋了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我爸买了吃的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你来我们这边🥺"
- },
- {
-  "speaker": "⬅️77",
-  "text": "叔叔也在啊"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯嗯 他说叫你一起"
- },
- {
-  "speaker": "⬅️77",
-  "text": "那我来"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你先别把我的吃了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "来晚了就不保证了😉"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左奇函！！！",
-  "stamp": "3月19日 00:00"
- },
- {
-  "speaker": "陈思罕",
-  "text": "生日快乐！！！🥳"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左少今天有什么安排"
- },
- {
-  "speaker": "⬅️77",
-  "text": "安排你给我唱生日歌"
- },
- {
-  "speaker": "陈思罕",
-  "text": "😳"
- },
- {
-  "speaker": "陈思罕",
-  "text": "祝福送到了 人先撤了"
- },
- {
-  "speaker": "⬅️77",
-  "text": "回来"
- },
- {
-  "speaker": "⬅️77",
-  "text": "我看见你房间灯还亮着了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "等我一下😑"
- },
- {
-  "speaker": "⬅️77",
-  "text": "哈哈哈哈哈"
- },
- {
-  "speaker": "⬅️77",
-  "text": "来吧 给你留蛋糕了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "zqh",
-  "stamp": "3月28日 22:36"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我明天那场还没背顺😭"
- },
- {
-  "speaker": "⬅️77",
-  "text": "哪段"
- },
- {
-  "speaker": "陈思罕",
-  "text": "就后面那一大段"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我一紧张就漏"
- },
- {
-  "speaker": "⬅️77",
-  "text": "拿过来 我给你搭一下"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你不睡吗🥺"
- },
- {
-  "speaker": "⬅️77",
-  "text": "这才几点"
- },
- {
-  "speaker": "⬅️77",
-  "text": "快点 别在手机上背给我了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "来了😭"
- },
- {
-  "speaker": "陈思罕",
-  "text": "杀青快乐左奇函🥳",
-  "stamp": "4月12日 20:17"
- },
- {
-  "speaker": "⬅️77",
-  "text": "杀青快乐！"
- },
- {
-  "speaker": "⬅️77",
-  "text": "刚刚喊你拍照怎么跑那么快"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我爸在叫我🥶"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你照片发我"
- },
- {
-  "speaker": "⬅️77",
-  "text": "等会儿挑一下"
- },
- {
-  "speaker": "陈思罕",
-  "text": "不许把我不好看的发出去😐"
- },
- {
-  "speaker": "⬅️77",
-  "text": "那没剩几张了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左奇函。"
- },
- {
-  "speaker": "⬅️77",
-  "text": "哈哈哈哈哈逗你的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "77下课等我",
-  "stamp": "4月30日 18:42"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你又落什么了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "没有😑"
- },
- {
-  "speaker": "陈思罕",
-  "text": "就是等我一下"
- },
- {
-  "speaker": "⬅️77",
-  "text": "行 在门口"
- },
- {
-  "speaker": "陈思罕",
-  "text": "🥰"
- },
- {
-  "speaker": "⬅️77",
-  "text": "请我喝水"
- },
- {
-  "speaker": "陈思罕",
-  "text": "刚感动完"
- },
- {
-  "speaker": "陈思罕",
-  "text": "77你看一眼我刚刚那段",
-  "stamp": "7月12日 21:53"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你发"
- },
- {
-  "speaker": "陈思罕",
-  "text": "在你旁边😐"
- },
- {
-  "speaker": "⬅️77",
-  "text": "？"
- },
- {
-  "speaker": "⬅️77",
-  "text": "那你倒是抬头叫我啊"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你戴着耳机 我喊了😑"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左奇函",
-  "stamp": "8月12日 23:18"
- },
- {
-  "speaker": "⬅️77",
-  "text": "在"
- },
- {
-  "speaker": "陈思罕",
-  "text": "有点睡不着"
- },
- {
-  "speaker": "⬅️77",
-  "text": "紧张了？"
- },
- {
-  "speaker": "陈思罕",
-  "text": "嗯🥶"
- },
- {
-  "speaker": "⬅️77",
-  "text": "我也有点"
- },
- {
-  "speaker": "陈思罕",
-  "text": "真的假的"
- },
- {
-  "speaker": "⬅️77",
-  "text": "真的啊 我又不是上台就自动开机"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我以为你是🤨"
- },
- {
-  "speaker": "⬅️77",
-  "text": "明天跟着走一遍就好了"
- },
- {
-  "speaker": "⬅️77",
-  "text": "早点睡 到时候叫你"
- },
- {
-  "speaker": "陈思罕",
-  "text": "那你一定叫我🥺"
- },
- {
-  "speaker": "⬅️77",
-  "text": "知道了 手机放下"
- },
- {
-  "speaker": "陈思罕",
-  "text": "终于结束了🤯",
-  "stamp": "8月17日 23:09"
- },
- {
-  "speaker": "⬅️77",
-  "text": "辛苦了陈思罕同学"
- },
- {
-  "speaker": "陈思罕",
-  "text": "你也是 左奇函同学🤝"
- },
- {
-  "speaker": "陈思罕",
-  "text": "香港那个还作数吗"
- },
- {
-  "speaker": "⬅️77",
-  "text": "当然"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你别到时候又睡不醒"
- },
- {
-  "speaker": "陈思罕",
-  "text": "这次一定醒🤓"
- },
- {
-  "speaker": "⬅️77",
-  "text": "下来没",
-  "stamp": "8月20日 11:32"
- },
- {
-  "speaker": "陈思罕",
-  "text": "电梯中"
- },
- {
-  "speaker": "⬅️77",
-  "text": "我在门口"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左少今天带路😎"
- },
- {
-  "speaker": "⬅️77",
-  "text": "行 走丢了别哭"
- },
- {
-  "speaker": "陈思罕",
-  "text": "🥺"
- },
- {
-  "speaker": "陈思罕",
-  "text": "zqh你在哪",
-  "stamp": "8月20日 15:41"
- },
- {
-  "speaker": "⬅️77",
-  "text": "刚刚那个店门口"
- },
- {
-  "speaker": "陈思罕",
-  "text": "我怎么看不见你"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你往回走"
- },
- {
-  "speaker": "⬅️77",
-  "text": "看见没 我挥手呢"
- },
- {
-  "speaker": "陈思罕",
-  "text": "看见了😵‍💫"
- },
- {
-  "speaker": "⬅️77",
-  "text": "不是说跟紧一点吗"
- },
- {
-  "speaker": "陈思罕",
-  "text": "闻香水去了😶"
- },
- {
-  "speaker": "⬅️77",
-  "text": "行 闻完记得把人领走"
- },
- {
-  "speaker": "陈思罕",
-  "text": "今天拍我的照片发我🥺",
-  "stamp": "8月20日 20:36"
- },
- {
-  "speaker": "⬅️77",
-  "text": "你不是就在我旁边"
- },
- {
-  "speaker": "陈思罕",
-  "text": "怕你忘了"
- },
- {
-  "speaker": "⬅️77",
-  "text": "隔空传给你了"
- },
- {
-  "speaker": "陈思罕",
-  "text": "左少摄影技术可以啊🤓"
- },
- {
-  "speaker": "⬅️77",
-  "text": "那必须的"
- },
- {
-  "speaker": "陈思罕",
-  "text": "除了这张把我拍得一米二的"
- },
- {
-  "speaker": "⬅️77",
-  "text": "那是你自己的问题"
- },
- {
-  "speaker": "陈思罕",
-  "text": "😑"
- },
- {
-  "speaker": "⬅️77",
-  "text": "上学怎么样",
-  "stamp": "9月6日 21:27"
- },
- {
-  "speaker": "陈思罕",
-  "text": "作业中😵‍💫"
- },
- {
-  "speaker": "陈思罕",
-  "text": "想回去找你们玩了"
- },
- {
-  "speaker": "⬅️77",
-  "text": "这才开学几天"
- },
- {
-  "speaker": "陈思罕",
-  "text": "已经感觉很久了🥲"
- },
- {
-  "speaker": "⬅️77",
-  "text": "写完叫我 打一把"
- },
- {
-  "speaker": "陈思罕",
-  "text": "真的？"
- },
- {
-  "speaker": "⬅️77",
-  "text": "真的 先写完"
- },
- {
-  "speaker": "陈思罕",
-  "text": "好 等我😝"
- }
-];
+const wc77Messages=[];
 const wc77Contact=wcContacts.find(contact=>contact.name==='⬅️77');
 const wcBefore77Render=renderChatMessages;
 renderChatMessages=function(contact){
@@ -3958,19 +2227,7 @@ async function playMessageSound(){
 document.addEventListener('pointerdown',prepareMessageSound,{capture:true,once:true});
 document.addEventListener('keydown',prepareMessageSound,{capture:true,once:true});
 const ownerSMSNumber='+86 (xxx) xxxx 3512';
-const ownerSMSMessages=[
- {text:'您好，我是手机的主人，我的朋友已经联系到我了，谢谢您主动联系我'},
- {text:'没关系的，举手之劳',outgoing:true},
- {text:'不过我发现了你网易云的小秘密哦～',outgoing:true},
- {text:'🤫'},
- {text:'他敢悄悄给我发，还不让我偷偷看吗'},
- {text:'难道只是这样吗🌚',outgoing:true},
- {text:'你还暴露了他是我唯一的紧急联系人'},
- {text:'欸？',outgoing:true},
- {text:'你怎么知道？！',outgoing:true},
- {text:'你没发现我的微信iPad也同步登陆了吗、'},
- {text:'😯',outgoing:true}
-];
+const ownerSMSMessages=[];
 let ownerSMSCount=0,ownerSMSBusy=false,ownerSMSDraft='',ownerSMSTyping=false;
 let ownerFreeWriting=false,ownerWishDraft='';
 const ownerBirthdayReplies=[];
@@ -4235,81 +2492,7 @@ document.addEventListener('keydown',startStoryClock,{capture:true,once:true});
 </style>
 
 <script>
-const wcBirthdayWishes = [
- {
-  "name": "妈咪",
-  "messages": [
-   "宝宝，生日快乐❤️妈妈希望你每天都开开心心的，吃好饭，睡好觉，做自己喜欢的事。不管长到多大，都是妈妈的小宝贝。明天给你做好吃的😘"
-  ]
- },
- {
-  "name": "呆地",
-  "messages": [
-   "儿子，生日快乐！🎂想去哪儿玩就跟爸爸说，咱们挑个时间，开车带它一起去。\n格格刚才还不肯睡，估计也在等着给你过生日🐶"
-  ]
- },
- {
-  "name": "姐姐",
-  "messages": [
-   "陈思罕同学！生日快乐🥳礼物先保密，明天你就知道了。今天寿星最大，允许你使唤我一天😎"
-  ]
- },
- {
-  "name": "龙哥",
-  "messages": [
-   "生日快乐，小孩🎂今天先不逗你了，让你当一天老大，晚上带你练枪"
-  ]
- },
- {
-  "name": "Henry",
-  "messages": [
-   "思罕！！！生日快乐呀🥳🥳新的一岁要多开心一点哦，不开心也可以来找我，别自己偷偷憋着。生日抱抱先欠着，下次见面给你补上！🥰"
-  ]
- },
- {
-  "name": "lulu杰",
-  "messages": [
-   "生日快乐"
-  ]
- },
- {
-  "name": "博文",
-  "messages": [
-   "小思罕，生日快乐！🎂新的一岁也继续做你想做的事，慢慢来，你已经做得很好了😘"
-  ]
- },
- {
-  "name": "⬅️77",
-  "messages": [
-   "思罕生日快乐！！！🥳🎂"
-  ]
- },
- {
-  "name": "肘纳森",
-  "messages": [
-   "Happy birthday，Jack！！😁🎂"
-  ]
- },
- {
-  "name": "STF",
-  "messages": [
-   "思罕，生日快乐🎂新的一岁平安健康，学习和训练都顺顺利利。"
-  ]
- },
- {
-  "name": "飞总",
-  "messages": [
-   "思罕，生日快乐！这一年辛苦了，能看到你的进步，继续加油。新的一岁也要照顾好身体，保持对舞台的热爱。"
-  ]
- },
- {
-  name:'勇勇莉莉雯雯罕罕',
-  messages:[
-   {text:'格格也来祝思罕罕小同学生日快乐啦～',speaker:'姐姐'},
-   {text:'[图片]',speaker:'姐姐',image:'assets/family-birthday-photo.jpg'}
-  ]
- }
-];
+const wcBirthdayWishes = [];
 const wcBirthdayReceived = new Map();
 let wcBirthdayStarted = false;
 function wcUnreadCount(contact){
@@ -4507,8 +2690,8 @@ function deliverFinalSongShare(){
  const banner=document.createElement('button');
  banner.id='finalSongNotification';
  banner.className='message-banner nm-emergency-banner';
- banner.setAttribute('aria-label','网易云音乐，等待复活码分享歌曲刻在我心底的名字，点击查看');
- banner.innerHTML='<span class="banner-icon" aria-hidden="true">♪</span><span class="banner-copy"><span class="banner-top"><strong>等待复活码 · 网易云音乐</strong><small>现在</small></span><span class="banner-text">[歌曲] 刻在我心底的名字</span></span>';
+ banner.setAttribute('aria-label','网易云音乐，该用户已消失分享歌曲刻在我心底的名字，点击查看');
+ banner.innerHTML='<span class="banner-icon" aria-hidden="true">♪</span><span class="banner-copy"><span class="banner-top"><strong>该用户已消失 · 网易云音乐</strong><small>现在</small></span><span class="banner-text">[歌曲] 刻在我心底的名字</span></span>';
  banner.onclick=()=>{closeVirtualKeyboard();closeGoosePlayer();banner.remove();openNetease('xixi');};
  phoneRoot.append(banner);
  playMessageSound();
@@ -4693,4 +2876,4 @@ function wcInstallHistoryJump(){
 .wc-history-jump:active{background:#353535}
 .wc-history-jump:focus-visible{outline:2px solid #07c160;outline-offset:2px}
 </style>
-</body></html>
+<script src="assets/companion.js?v=2"></script></body></html>
