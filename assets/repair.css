@@ -1,0 +1,8 @@
+.phone{--lock-photo:url('junming-lock.jpg?v=6')!important}
+#lock{background:#fff url('junming-lock.jpg?v=6') center/cover no-repeat!important}
+#home{background:url('junming-home.jpg?v=6') center/cover no-repeat!important}
+#pass{background-image:none!important}#pass:before{background-image:linear-gradient(#2228,#2228),url('junming-lock.jpg?v=6')!important}
+#lock .time,#lock .date,#lock .lock-bottom{color:#222!important;text-shadow:none!important;-webkit-text-stroke:0!important}
+.repair-compose{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#f5f5f5;color:#555;flex-shrink:0;border-top:1px solid #ddd}
+.repair-compose .script-input{min-height:34px;max-height:85px;overflow:auto;flex:1;background:white;border-radius:5px;padding:7px;color:#222;outline:none;white-space:pre-wrap}
+.nm-shell #content:has(.repair-compose){display:flex;flex-direction:column;overflow:hidden}.nm-shell #content:has(.repair-compose) .nm-dm-scroll{flex:1;min-height:0;overflow:auto}

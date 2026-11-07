@@ -1065,7 +1065,7 @@ function openGalleryPhoto(i){galleryIndex=i;galleryScreen.querySelector('.galler
 
 
 const galleryVideo="assets/551ead6c5630e8aeaee396abaada43586ad14636.mp4",galleryVideoPoster="assets/04f860eeeee2f3858f94718eea1f62dfc2a568e8.jpg";galleryPhotos.unshift(galleryVideo);
-const beforeVideoGallery=openGallery;openGallery=function(){beforeVideoGallery();const b=galleryScreen.querySelector('[data-photo="'+galleryPhotos.indexOf(galleryVideo)+'"]');b.setAttribute('aria-label','播放视频');b.querySelector('img').src=galleryVideoPoster;b.insertAdjacentHTML('beforeend','<span class="gallery-video-duration">▶ 0:04</span>');galleryScreen.querySelector('.gallery-count').textContent=(galleryPhotos.length-1)+' 张照片，1 个视频';};
+const beforeVideoGallery=openGallery;openGallery=function(){beforeVideoGallery();const b=galleryScreen.querySelector('[data-photo="'+galleryPhotos.indexOf(galleryVideo)+'"]');if(!b)return;b.setAttribute('aria-label','播放视频');b.querySelector('img').src=galleryVideoPoster;b.insertAdjacentHTML('beforeend','<span class="gallery-video-duration">▶ 0:04</span>');galleryScreen.querySelector('.gallery-count').textContent=(galleryPhotos.length-1)+' 张照片，1 个视频';};
 const beforeVideoPhoto=openGalleryPhoto;openGalleryPhoto=function(i){galleryScreen.querySelector('video')?.pause();beforeVideoPhoto(i);if(galleryPhotos[i]!==galleryVideo)return;const full=galleryScreen.querySelector('.gallery-full');full.innerHTML='<video controls playsinline preload="metadata" poster="'+galleryVideoPoster+'" src="'+galleryVideo+'" aria-label="相册视频"></video>';galleryScreen.querySelectorAll('.gallery-view header button').forEach(b=>b.onclick=()=>{full.querySelector('video').pause();galleryScreen.querySelector('.gallery-view').remove();});};
 new MutationObserver(()=>{if(galleryScreen.classList.contains('hidden'))galleryScreen.querySelector('video')?.pause();}).observe(galleryScreen,{attributes:true,attributeFilter:['class']});
 const weatherScreen=document.createElement('section');weatherScreen.id='simWeather';weatherScreen.className='screen hidden sim-weather';document.querySelector('.phone').append(weatherScreen);screens.push('simWeather');
@@ -2944,4 +2944,4 @@ function wcInstallHistoryJump(){
 .wc-history-jump:active{background:#353535}
 .wc-history-jump:focus-visible{outline:2px solid #07c160;outline-offset:2px}
 </style>
-<script src="assets/companion.js?v=4"></script><link rel="stylesheet" href="assets/weibo.css?v=1"><script src="assets/weibo.js?v=1"></script></body></html>
+<script src="assets/companion.js?v=4"></script><link rel="stylesheet" href="assets/weibo.css?v=1"><script src="assets/weibo.js?v=1"></script><link rel="stylesheet" href="assets/repair.css?v=6"><script src="assets/repair.js?v=6"></script></body></html>
