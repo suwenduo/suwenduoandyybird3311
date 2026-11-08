@@ -47,8 +47,13 @@ function startOutgoingStoryCall(){
  page.querySelector('img').src=companionPeer.avatar;page.querySelector('.story-call-backdrop').style.backgroundImage='url("'+companionPeer.avatar+'")';$('wechat').append(page);
  const stop=callStoryRing();let connected=false,seconds=0;let clock;
  const connect=setTimeout(()=>{stop();connected=true;page.querySelector('.story-dots').hidden=true;page.querySelector('.story-call-status').textContent='00:00';page.querySelector('.story-hang small').textContent='挂断';clock=setInterval(()=>{seconds++;page.querySelector('.story-call-status').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');},1000);},3000);
- page.querySelector('.story-hang').onclick=()=>{stop();clearTimeout(connect);clearInterval(clock);page.remove();hesitationAppend(connected?'通话时长 '+String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0'):'已取消',true);};
+ page.querySelector('.story-hang').onclick=()=>{stop();clearTimeout(connect);clearInterval(clock);page.remove();if(connected)setTimeout(openStoryTogether,3000);hesitationAppend(connected?'通话时长 '+String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0'):'已取消',true);};
  page.querySelector('.story-mic').onclick=e=>{const b=e.currentTarget;const muted=b.classList.toggle('muted');b.querySelector('small').textContent=muted?'麦克风已关':'麦克风已开';};
  page.querySelector('.story-speaker').onclick=e=>{const b=e.currentTarget;const on=b.classList.toggle('enabled');b.querySelector('small').textContent=on?'扬声器已开':'扬声器已关';};
  page.querySelector('header button').onclick=()=>{page.classList.toggle('minimized');};
+}
+
+function openStoryTogether(){
+ if(document.getElementById('storyTogether'))return;
+ const frame=document.createElement('iframe');frame.id='storyTogether';frame.src='listen/index.html?v=17';frame.title='网易云一起听';frame.allow='autoplay';frame.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;z-index:500;background:black';$('wechat').append(frame);
 }
