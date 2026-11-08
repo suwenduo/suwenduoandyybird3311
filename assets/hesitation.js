@@ -60,6 +60,7 @@ repairKeyboard=function(){
  hesitationBeforeKeyboard();
  if(activeChat!==companionPeer.name||repairMusic)return;
  hesitationPaint();
+ if(hesitationPhase==='idle'){prepareMessageSound();hesitationType(hesitationLines[0],'erase');}
 };
 openVirtualKeyboard=repairKeyboard;
 const hesitationBeforeKey=classicKey;
