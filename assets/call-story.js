@@ -58,7 +58,7 @@ function startOutgoingStoryCall(){
 
 function openStoryTogether(){
  if(document.getElementById('storyTogether'))return;
- const frame=document.createElement('iframe');frame.id='storyTogether';frame.src='listen/index.html?v=26';frame.title='网易云一起听';frame.allow='autoplay';frame.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;z-index:500;background:black';$('wechat').append(frame);
+ const frame=document.createElement('iframe');frame.id='storyTogether';frame.src='listen/index.html?v=27';frame.title='网易云一起听';frame.allow='autoplay';frame.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;z-index:500;background:black';$('wechat').append(frame);
 }
 
 window.addEventListener('message',event=>{
