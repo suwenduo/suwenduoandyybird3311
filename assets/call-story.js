@@ -10,9 +10,10 @@ async function callStoryType(text){
  await callStoryWait(130);send?.classList.remove('pressed');
 }
 function callStoryRing(){
- prepareMessageSound();const ctx=messageSoundContext;if(!ctx)return()=>{};
+ const ctx=messageSoundContext;if(!ctx)return()=>{};
+ prepareMessageSound();
  const tones=[];let ended=false;
- function chime(){if(ended)return;const now=ctx.currentTime;[660,880,660,880].forEach((hz,i)=>{const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,now+i*.22);g.gain.linearRampToValueAtTime(.07,now+i*.22+.02);g.gain.exponentialRampToValueAtTime(.0001,now+i*.22+.18);o.connect(g);g.connect(ctx.destination);o.start(now+i*.22);o.stop(now+i*.22+.2);tones.push(o);o.onended=()=>{o.disconnect();g.disconnect();};});}
+ async function chime(){if(ended)return;await prepareMessageSound();if(ended||ctx.state!=='running')return;const now=ctx.currentTime;[660,880,660,880].forEach((hz,i)=>{const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,now+i*.22);g.gain.linearRampToValueAtTime(.07,now+i*.22+.02);g.gain.exponentialRampToValueAtTime(.0001,now+i*.22+.18);o.connect(g);g.connect(ctx.destination);o.start(now+i*.22);o.stop(now+i*.22+.2);tones.push(o);o.onended=()=>{o.disconnect();g.disconnect();};});}
  chime();const timer=setInterval(chime,1600);return()=>{ended=true;clearInterval(timer);tones.forEach(o=>{try{o.stop();}catch{}});};
 }
 async function startCallStory(){

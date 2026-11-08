@@ -2267,8 +2267,9 @@ async function prepareMessageSound(){
  try{
   const AudioEngine=window.AudioContext||window.webkitAudioContext;
   if(!AudioEngine)return null;
-  if(!messageSoundContext)messageSoundContext=new AudioEngine();
-  if(messageSoundContext.state==='suspended')await messageSoundContext.resume();
+  try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
+  if(!messageSoundContext||messageSoundContext.state==='closed')messageSoundContext=new AudioEngine();
+  if(messageSoundContext.state!=='running')await messageSoundContext.resume();
   return messageSoundContext;
  }catch{return null;}
 }
@@ -2292,7 +2293,9 @@ async function playMessageSound(){
   oscillator.stop(time+.18);
  });
 }
-document.addEventListener('pointerdown',prepareMessageSound,{capture:true,once:true});
+document.addEventListener('pointerdown',prepareMessageSound,{capture:true});
+document.addEventListener('touchend',prepareMessageSound,{passive:true});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)prepareMessageSound();});
 document.addEventListener('keydown',prepareMessageSound,{capture:true,once:true});
 const ownerSMSNumber='+86 (xxx) xxxx 3512';
 const ownerSMSMessages=[];
@@ -2944,4 +2947,4 @@ function wcInstallHistoryJump(){
 .wc-history-jump:active{background:#353535}
 .wc-history-jump:focus-visible{outline:2px solid #07c160;outline-offset:2px}
 </style>
-<script src="assets/companion.js?v=4"></script><link rel="stylesheet" href="assets/weibo.css?v=1"><script src="assets/weibo.js?v=1"></script><link rel="stylesheet" href="assets/repair.css?v=6"><script src="assets/repair.js?v=6"></script><link rel="stylesheet" href="assets/weibo-story.css?v=7"><script src="assets/weibo-story.js?v=7"></script><link rel="stylesheet" href="assets/birthday-profile.css?v=8"><script src="assets/birthday-profile.js?v=13"></script><link rel="stylesheet" href="assets/arrival.css?v=9"><script src="assets/arrival.js?v=9"></script><script src="assets/keyboard-classic.js?v=10"></script><script src="assets/hesitation.js?v=13"></script><link rel="stylesheet" href="assets/call-story.css?v=16"><script src="assets/call-story.js?v=17"></script></body></html>
+<script src="assets/companion.js?v=4"></script><link rel="stylesheet" href="assets/weibo.css?v=1"><script src="assets/weibo.js?v=1"></script><link rel="stylesheet" href="assets/repair.css?v=6"><script src="assets/repair.js?v=6"></script><link rel="stylesheet" href="assets/weibo-story.css?v=7"><script src="assets/weibo-story.js?v=7"></script><link rel="stylesheet" href="assets/birthday-profile.css?v=8"><script src="assets/birthday-profile.js?v=13"></script><link rel="stylesheet" href="assets/arrival.css?v=9"><script src="assets/arrival.js?v=9"></script><script src="assets/keyboard-classic.js?v=10"></script><script src="assets/hesitation.js?v=13"></script><link rel="stylesheet" href="assets/call-story.css?v=16"><script src="assets/call-story.js?v=18"></script></body></html>
