@@ -6,7 +6,7 @@ function birthdayNotice(title,text,onclick){
 }
 function releaseBirthdayWeibo(){
  if(birthdayReleased)return;birthdayReleased=true;
- birthdayNotice('TF家族-陈思罕_SH 发布了新微博',wbStory.text.replace(/\n/g,' ').slice(0,43)+'…',()=>{openWeibo('story-detail');startBirthdayReplies();});
+ birthdayNotice('TF家族-陈思罕_SH 发布了新微博',wbStory.text.replace(/\n/g,' ').slice(0,43)+'…',()=>{openWeibo('story-detail');});
 }
 function startBirthdayReplies(){
  if(birthdayOpened)return;birthdayOpened=true;let delay=0;
@@ -15,6 +15,7 @@ function startBirthdayReplies(){
 const birthdayFlowOpen=openWeibo;
 openWeibo=function(page='home'){
  birthdayFlowOpen(page);
+
  if(!birthdayReleased){wbScreen.querySelectorAll('.wbs-post,.birthday-comment-list').forEach(n=>n.remove());const body=wbScreen.querySelector('.wb-body');body.insertAdjacentHTML('beforeend','<p class="birthday-empty">暂无微博</p>');return;}
  if(page==='story-detail'){
  startBirthdayReplies();const compose=document.createElement('button');compose.className='birthday-compose';compose.textContent=birthdayOwnSent?'已发送生日祝福':'写评论…';compose.onclick=openBirthdayKeyboard;wbScreen.append(compose);
@@ -27,4 +28,4 @@ function openBirthdayKeyboard(){
  let started=false;async function type(){if(started)return;started=true;const draft=box.querySelector('.birthday-draft');for(const char of Array.from(birthdayAll[0].text)){draft.textContent+=char;draft.scrollTop=draft.scrollHeight;const all=keys.querySelectorAll('button'),key=all[Math.floor(Math.random()*all.length)];key.classList.add('pressed');setTimeout(()=>key.classList.remove('pressed'),100);await new Promise(r=>setTimeout(r,75));}box.querySelector('.birthday-send').disabled=false;}
  box.querySelector('.birthday-draft').onclick=type;box.querySelector('.birthday-send').onclick=()=>{if(birthdayOwnSent)return;birthdayOwnSent=true;wbBirthdayComments.push({...birthdayAll[0],time:'刚刚'});box.remove();openWeibo('story-detail');const list=wbScreen.querySelector('.birthday-comment-list');list?.lastElementChild?.scrollIntoView({block:'center',behavior:'smooth'});};wbScreen.append(box);
 }
-window.addEventListener('message',e=>{const frame=document.getElementById('storyTogether');if(e.origin===location.origin&&e.source===frame?.contentWindow&&e.data?.type==='together-clock-finished')setTimeout(releaseBirthdayWeibo,700);});
+window.addEventListener('message',e=>{const frame=document.getElementById('storyTogether');if(e.origin===location.origin&&e.source===frame?.contentWindow&&e.data?.type==='together-clock-finished')setTimeout(releaseBirthdayWeibo,3000);});

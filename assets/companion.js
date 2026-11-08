@@ -73,7 +73,7 @@ pigHistory.push({text:'为什么？',outgoing:false},{text:'怕他觉得我傻',
 
 // Each account retains its own original playlist.
 const junmingLikedTracks=xixiLikedTracks.map(t=>[...t]);
-junmingLikedTracks.unshift(['距离','郑润泽','距离']);
+junmingLikedTracks.unshift(['我们俩','郭顶','我们俩'],['距离','郑润泽','距离']);
 const sihanLikedTracks=shChenPlaylist.map(t=>[...t]);
 shChenPlaylist.splice(0,shChenPlaylist.length,...junmingLikedTracks);
 xixiLikedTracks.splice(0,xixiLikedTracks.length,...sihanLikedTracks);
@@ -96,4 +96,6 @@ openNetease=function(page=nmCurrent){
 };
 
 nmExtraTracks.distance={title:'距离',artist:'郑润泽',src:'assets/distance.mp3',cover:''};nmSongAudioSources.distance='assets/distance.mp3';
-const distanceBeforeMusic=openNetease;openNetease=function(page=nmCurrent){distanceBeforeMusic(page);if(page==='junming-liked'){const row=document.querySelector('.xixi-liked-track');if(row){row.style.cursor='pointer';row.onclick=()=>openSharedSongPlayer('distance');}}};
+const distanceBeforeMusic=openNetease;openNetease=function(page=nmCurrent){distanceBeforeMusic(page);if(page==='junming-liked'){const row=document.querySelector('.xixi-liked-track');if(row){row.style.cursor='pointer';row.onclick=()=>openSharedSongPlayer('weTwo');const second=document.querySelectorAll('.xixi-liked-track')[1];if(second)second.onclick=()=>openSharedSongPlayer('distance');}}};
+
+nmExtraTracks.weTwo={title:'我们俩',artist:'郭顶',src:'assets/we-two.mp3',cover:''};nmSongAudioSources.weTwo='assets/we-two.mp3';
