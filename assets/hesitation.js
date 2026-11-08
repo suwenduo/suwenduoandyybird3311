@@ -27,12 +27,12 @@ function hesitationType(text,next){
  const step=()=>{
   if(token!==hesitationToken)return;
   hesitationKeyEffect();hesitationDraft=chars.slice(0,++index).join('');hesitationPaint();
-  if(index<chars.length)setTimeout(step,210+Math.random()*150);
+  if(index<chars.length)setTimeout(step,Math.max(70,210+Math.random()*150-300));
   else if(next==='erase'){
    hesitationPhase='holding';hesitationPaint();setTimeout(()=>hesitationErase(token),hesitationIndex===3?2100:1400);
   }else{hesitationPhase=next;hesitationPaint();}
  };
- setTimeout(step,350);
+ setTimeout(step,50);
 }
 function hesitationErase(token){
  if(token!==hesitationToken)return;
@@ -40,7 +40,7 @@ function hesitationErase(token){
  const step=()=>{
   if(token!==hesitationToken)return;
   hesitationKeyEffect(true);hesitationDraft=Array.from(hesitationDraft).slice(0,-1).join('');removed++;hesitationPaint();
-  if(hesitationDraft){setTimeout(step,removed%3===0?390:130+Math.random()*80);return;}
+  if(hesitationDraft){setTimeout(step,Math.max(60,(removed%3===0?390:130+Math.random()*80)-300));return;}
   hesitationIndex++;hesitationPhase='waiting';hesitationPaint();
   if(hesitationIndex<hesitationLines.length){setTimeout(()=>hesitationType(hesitationLines[hesitationIndex],'erase'),800);return;}
   setTimeout(()=>{
