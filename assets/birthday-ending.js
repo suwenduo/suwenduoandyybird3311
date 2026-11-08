@@ -1,4 +1,13 @@
-let birthdayEndingStarted=false;
+let birthdayEndingStarted=false,birthdayVoiceStarted=false,birthdayVoiceSource=null;
+const birthdayVoiceData=fetch('assets/birthday-ending-voice.wav').then(r=>{if(!r.ok)throw Error('祝福音频加载失败');return r.arrayBuffer();});
+async function startBirthdayVoice(){
+ if(birthdayVoiceStarted)return;birthdayVoiceStarted=true;
+ try{const context=await prepareMessageSound();if(!context)throw Error('声音不可用');const buffer=await context.decodeAudioData((await birthdayVoiceData).slice(0));birthdayVoiceSource=context.createBufferSource();birthdayVoiceSource.buffer=buffer;birthdayVoiceSource.connect(context.destination);birthdayVoiceSource.start();}catch{const voice=new Audio('assets/birthday-ending-voice.wav');voice.preload='auto';voice.play().catch(()=>{});}
+}
+function showFinalBirthdayFilm(overlay){
+ const video=document.createElement('video');video.src='assets/birthday-ending-film.mp4';video.muted=true;video.defaultMuted=true;video.playsInline=true;video.setAttribute('webkit-playsinline','');video.setAttribute('aria-label','生日祝福结尾视频');video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:black';overlay.append(video);video.play().catch(()=>{video.controls=true;});
+}
+
 const endingTextPromise=fetch('assets/birthday-ending.json?v=28').then(r=>{if(!r.ok)throw Error('结尾文案加载失败');return r.json();});
 async function playBirthdayEnding(){
  if(birthdayEndingStarted)return;birthdayEndingStarted=true;
@@ -13,6 +22,8 @@ async function playBirthdayEnding(){
   for(const char of chars){copy.textContent+=char;await wait(step);}
   copy.classList.remove('typing');await wait(i===0?3000:2000);
   copy.style.transition='opacity '+(i===0?'1.1s':'.13s')+' linear';copy.style.opacity='0';await wait(i===0?1400:330);copy.textContent='';
+  if(i===0)startBirthdayVoice();
  }
+ showFinalBirthdayFilm(overlay);
 }
 window.addEventListener('message',e=>{const frame=document.getElementById('storyTogether');if(e.origin===location.origin&&e.source===frame?.contentWindow&&e.data?.type==='together-song-ended')playBirthdayEnding();});
