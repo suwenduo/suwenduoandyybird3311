@@ -1,8 +1,13 @@
-let birthdayEndingStarted=false,birthdayVoiceStarted=false,birthdayVoiceSource=null;
+let birthdayEndingStarted=false,birthdayVoiceStarted=false,birthdayVoiceSource=null,birthdaySunStarted=false,birthdaySunSource=null;
+const birthdaySunData=fetch('assets/track9.mp3').then(r=>{if(!r.ok)throw Error('太阳加载失败');return r.arrayBuffer();});
+async function playBirthdaySun(){
+ if(birthdaySunStarted)return;birthdaySunStarted=true;
+ try{const context=await prepareMessageSound();if(!context)throw Error('声音不可用');const buffer=await context.decodeAudioData((await birthdaySunData).slice(0));birthdaySunSource=context.createBufferSource();birthdaySunSource.buffer=buffer;birthdaySunSource.connect(context.destination);birthdaySunSource.start();}catch{const song=new Audio('assets/track9.mp3');song.play().catch(()=>{});}
+}
 const birthdayVoiceData=fetch('assets/birthday-ending-voice.wav').then(r=>{if(!r.ok)throw Error('祝福音频加载失败');return r.arrayBuffer();});
 async function startBirthdayVoice(){
  if(birthdayVoiceStarted)return;birthdayVoiceStarted=true;
- try{const context=await prepareMessageSound();if(!context)throw Error('声音不可用');const buffer=await context.decodeAudioData((await birthdayVoiceData).slice(0));birthdayVoiceSource=context.createBufferSource();birthdayVoiceSource.buffer=buffer;birthdayVoiceSource.connect(context.destination);birthdayVoiceSource.start();}catch{const voice=new Audio('assets/birthday-ending-voice.wav');voice.preload='auto';voice.play().catch(()=>{});}
+ try{const context=await prepareMessageSound();if(!context)throw Error('声音不可用');const buffer=await context.decodeAudioData((await birthdayVoiceData).slice(0));birthdayVoiceSource=context.createBufferSource();birthdayVoiceSource.buffer=buffer;birthdayVoiceSource.connect(context.destination);birthdayVoiceSource.onended=playBirthdaySun;birthdayVoiceSource.start();}catch{const voice=new Audio('assets/birthday-ending-voice.wav');voice.preload='auto';voice.onended=playBirthdaySun;voice.play().catch(()=>{});}
 }
 function showFinalBirthdayFilm(overlay){
  const video=document.createElement('video');video.src='assets/birthday-ending-film.mp4';video.muted=true;video.defaultMuted=true;video.playsInline=true;video.setAttribute('webkit-playsinline','');video.setAttribute('aria-label','生日祝福结尾视频');video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:black';overlay.append(video);video.play().catch(()=>{video.controls=true;});
