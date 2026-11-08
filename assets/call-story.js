@@ -58,13 +58,14 @@ function startOutgoingStoryCall(){
 
 function openStoryTogether(){
  if(document.getElementById('storyTogether'))return;
- const frame=document.createElement('iframe');frame.id='storyTogether';frame.src='listen/index.html?v=25';frame.title='网易云一起听';frame.allow='autoplay';frame.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;z-index:500;background:black';$('wechat').append(frame);
+ const frame=document.createElement('iframe');frame.id='storyTogether';frame.src='listen/index.html?v=26';frame.title='网易云一起听';frame.allow='autoplay';frame.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;z-index:500;background:black';$('wechat').append(frame);
 }
 
 window.addEventListener('message',event=>{
  const frame=document.getElementById('storyTogether');if(!frame||event.source!==frame.contentWindow||event.origin!==location.origin||event.data?.type!=='together-clock-finished')return;
  // Preserve the iframe and audio while returning to the phone desktop.
- phoneRoot.append(frame);frame.style.display='none';
+ frame.style.display='none';
  for(const stage of Object.values(storyClockStages)){stage.minute=24*60+16*60+30;stage.ceiling=stage.minute;}
  storyClockMinute=24*60+16*60+30;storyClockChangedAt=performance.now();paintStoryClock();activeChat=null;document.getElementById('virtualKeyboard')?.remove();show('home');
+ setTimeout(()=>releaseBirthdayWeibo(),3000);
 });
