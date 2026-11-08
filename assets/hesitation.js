@@ -73,7 +73,7 @@ classicKey=function(label){
   hesitationAppend('……',true);hesitationDraft='';hesitationPhase='waiting';hesitationPaint();setTimeout(()=>hesitationType('我想你了','send-miss'),650);return;
  }
  if(label==='回车'&&hesitationPhase==='send-miss'){
-  hesitationAppend('我想你了',true);hesitationDraft='';hesitationPhase='complete';hesitationPaint();return;
+  hesitationAppend('我想你了',true);hesitationDraft='';hesitationPhase='complete';hesitationPaint();startCallStory();return;
  }
  // Keep the scripted conversation intact after its two manual sends.
 };
